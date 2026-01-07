@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { logoJDev } from "../assets/images/logo";
 
 const Header = () => {
@@ -5,19 +6,23 @@ const Header = () => {
     <>
       <div className="max-container font-roboto flex w-full items-center">
         <div className="flex justify-center">
-          <img
-            src={logoJDev}
-            alt="logo JDev"
-            width={130}
-            className="cursor-pointer bg-white "
-          />
+          <Link to="/">
+            <img
+              src={logoJDev}
+              alt="logo JDev"
+              width={130}
+              className="cursor-pointer bg-white"
+            />
+          </Link>
         </div>
 
         {/* ! Il faut mettre les padding et border (transparent) avant le hover ou active pour ne pas qu'il y ait de chgts de marges après hover */}
-        <div className="mr-24 flex flex-1 justify-center gap-14 text-xl leading-normal ">
-          <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
-            Accueil
-          </p>
+        <div className="mr-24 flex flex-1 justify-center gap-14 text-xl leading-normal">
+          <Link to="/">
+            <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
+              Accueil
+            </p>
+          </Link>
 
           <div className="group relative">
             <p className="cursor-pointer rounded-lg px-2 py-1 hover:bg-[#dde7f6]">
@@ -40,11 +45,11 @@ const Header = () => {
               </ul>
             </div>
           </div>
-
-          <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
-            CV
-          </p>
-
+          <Link to="/CV">
+            <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
+              CV
+            </p>
+          </Link>
           <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
             Contact
           </p>
