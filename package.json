@@ -13,8 +13,10 @@
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.18",
     "aos": "^2.3.4",
+    "clsx": "^2.1.1",
     "copyright-update": "^1.19.0",
     "formik": "^2.4.9",
+    "motion": "^12.24.10",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
@@ -25,6 +27,7 @@
     "react-spinners": "^0.17.0",
     "react-toastify": "^11.0.5",
     "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.18",
     "yup": "^1.7.1"
   },

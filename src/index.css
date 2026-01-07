@@ -100,3 +100,26 @@
     @apply pb-12 sm:pb-24;
   }
 }
+
+/*  background-position:X Y; => it's the position of the color: 0% means it starts from the left for x and Top for y */
+/* 0%{background-position: 0% 50%;} = Start of the animation the bg is positionned left edge and vertically centered  */
+/* 50% { ...: 100% 50% } = the halfway throught the animation, the bg moves fully to the right  */
+/* 50% { ...: 0% 50% } = the end of the animation, the bg moves returns to start */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Custom class for animated gradient => la 1ere couleur est à gauche puis se déroule vers la gauche avec la 2eme puis la 3eme; puis la 1ere reviens vers la droite*/
+.bg-animated-gradient {
+  background: linear-gradient(to right, #131a25, #022066, #131a25);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
