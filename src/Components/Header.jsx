@@ -45,6 +45,12 @@ const Header = () => {
               </ul>
             </div>
           </div>
+
+          <Link to="/technologies">
+            <div className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
+              Technologies
+            </div>
+          </Link>
           <Link to="/CV">
             <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
               CV

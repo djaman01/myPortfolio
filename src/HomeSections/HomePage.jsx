@@ -16,24 +16,25 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="mt-4 mb-2">
-        <Header />
+      {/* flex flex-col pour que le header et la "Hero Section" soit l'un en-dessous de l'autre et je mets min-h-screen ici pour ne pas avoir de possibilité de scrolldown  */}
+      <div className="flex min-h-screen flex-col">
+        <div className="mt-2">
+          <Header />
+        </div>
 
-        <div className="bg-animated-gradient mt-5 flex min-h-screen flex-col items-center justify-center">
+        <div className="bg-animated-gradient flex flex-1 flex-col items-center justify-center">
           <p className="mb-10 text-3xl text-neutral-200">
             Jaafar Bendahou, développeur web Freelance
           </p>
           <TypewriterEffect words={words} />
           <div className="mt-10 flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
-            <button className="h-10 w-40 rounded-xl border border-transparent bg-black text-md text-white dark:border-white">
-              Portfolio
+            <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-transparent bg-black text-white active:scale-105 dark:border-white">
+              Technologies
             </button>
-            <button className="h-10 w-40 rounded-xl border border-black bg-white text-md text-black">
+            <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-black bg-white text-black active:scale-105">
               Contact
             </button>
           </div>
-
-
         </div>
       </div>
     </>
