@@ -16,23 +16,63 @@ import TechnoCards from "../Components/TechnoCards";
 
 const Technos = () => {
   const frontLogos = [
-    { imgLogo: reactLogo, nomTechno: "React.js" },
-    { imgLogo: viteLogo, nomTechno: "Vite.js" },
-    { imgLogo: tailwindLogo, nomTechno: "Tailwind CSS" },
+    {
+      imgLogo: reactLogo,
+      nomTechno: "React.js",
+      bgAnimatedColor: "bg-blue-500",
+    },
+    {
+      imgLogo: viteLogo,
+      nomTechno: "Vite.js",
+      bgAnimatedColor: "bg-blue-500",
+    },
+    {
+      imgLogo: tailwindLogo,
+      nomTechno: "Tailwind CSS",
+      bgAnimatedColor: "bg-blue-500",
+    },
   ];
 
   const backLogos = [
-    { imgLogo: nodeLogo, nomTechno: "Node.js" },
-    { imgLogo: expressLogo, nomTechno: "Express.js" },
-    { imgLogo: mongooseLogo, nomTechno: "Mongoose.js" },
-    { imgLogo: SQLlogo, nomTechno: "SQL" },
+    {
+      imgLogo: nodeLogo,
+      nomTechno: "Node.js",
+      bgAnimatedColor: "bg-lime-500",
+    },
+    {
+      imgLogo: expressLogo,
+      nomTechno: "Express.js",
+      bgAnimatedColor: "bg-lime-500",
+    },
+    {
+      imgLogo: mongooseLogo,
+      nomTechno: "Mongoose.js",
+      bgAnimatedColor: "bg-lime-500",
+    },
+    { imgLogo: SQLlogo, nomTechno: "SQL", bgAnimatedColor: "bg-lime-500" },
   ];
 
   const dataBasesLogos = [
-    { imgLogo: mongoDBlogo, nomTechno: "Mongo DB" },
-    { imgLogo: atlasLogo, nomTechno: "Mongo DB Atlas (For MongoDB Databases)" },
-    { imgLogo: mySQLlogo, nomTechno: "MySQL" },
-    { imgLogo: phpmyadminLogo, nomTechno: "PHPmyAdmin (For MySQL Databases)" },
+    {
+      imgLogo: mySQLlogo,
+      nomTechno: "MySQL",
+      bgAnimatedColor: "bg-yellow-500",
+    },
+    {
+      imgLogo: phpmyadminLogo,
+      nomTechno: "PHPmyAdmin",
+      bgAnimatedColor: "bg-yellow-500",
+    },
+    {
+      imgLogo: mongoDBlogo,
+      nomTechno: "Mongo DB",
+      bgAnimatedColor: "bg-yellow-500",
+    },
+    {
+      imgLogo: atlasLogo,
+      nomTechno: "Mongo DB Atlas",
+      bgAnimatedColor: "bg-yellow-500",
+    },
   ];
 
   return (
@@ -44,13 +84,12 @@ const Technos = () => {
       {/* div de tout le corps du component en une grid */}
       <div className="grid grid-cols-1 gap-20 bg-gray-100">
         {/* Page description */}
-        <div className="mt-10 flex flex-col items-center px-4 text-center sm:px-10 md:px-20">
-          <p className="martian-mono text-lg text-gray-700">
+        <div className="mt-14 flex flex-col items-center px-4 text-center sm:px-10 md:px-20">
+          <p className="martian-mono text-2xl text-gray-900">
             Voici les technologies que je maîtrise et utilise pour mes projets.
           </p>
-          <p className="martian-mono text-lg text-gray-700 mt-5">
-            Ces outils me permettent de créer des applications web modernes,
-            performantes et évolutives.
+          <p className="martian-mono mt-5 text-lg text-gray-800">
+            Je m'adapte à de nouvelles technologies selon les besoins du projet.
           </p>
         </div>
 
@@ -62,7 +101,11 @@ const Technos = () => {
           <div className="flex w-full items-center justify-around">
             {frontLogos.map((e) => (
               <div key={e.nomTechno}>
-                <TechnoCards imgLogo={e.imgLogo} nomTechno={e.nomTechno} />
+                <TechnoCards
+                  imgLogo={e.imgLogo}
+                  nomTechno={e.nomTechno}
+                  bgAnimatedColor={e.bgAnimatedColor}
+                />
               </div>
             ))}
           </div>
@@ -74,7 +117,11 @@ const Technos = () => {
           <div className="flex w-full items-center justify-around">
             {backLogos.map((e) => (
               <div key={e.nomTechno}>
-                <TechnoCards imgLogo={e.imgLogo} nomTechno={e.nomTechno} />
+                <TechnoCards
+                  imgLogo={e.imgLogo}
+                  nomTechno={e.nomTechno}
+                  bgAnimatedColor={e.bgAnimatedColor}
+                />
               </div>
             ))}
           </div>
@@ -83,12 +130,16 @@ const Technos = () => {
         {/* 3eme row */}
         <div className="mt-10 mb-20 flex flex-col items-center">
           <h1 className="martian-mono mb-10 text-2xl">
-            Databases Technologies and Management Tools
+            Databases Technologies & Management Tools
           </h1>
           <div className="flex w-full items-center justify-around">
             {dataBasesLogos.map((e) => (
               <div key={e.nomTechno}>
-                <TechnoCards imgLogo={e.imgLogo} nomTechno={e.nomTechno} />
+                <TechnoCards
+                  imgLogo={e.imgLogo}
+                  nomTechno={e.nomTechno}
+                  bgAnimatedColor={e.bgAnimatedColor}
+                />
               </div>
             ))}
           </div>
