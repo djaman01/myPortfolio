@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 
 const CV = () => {
@@ -7,7 +8,7 @@ const CV = () => {
         <Header />
       </div>
 
-      <div className="mb-10 mt-5 text-center">
+      <div className="mt-5 mb-10 text-center">
         <h1 className="font-roboto-bold text-3xl tracking-widest text-[#214b9b] uppercase">
           Curriculum vitæ
         </h1>
@@ -22,10 +23,14 @@ const CV = () => {
       <iframe
         src="/CV-JaafarBenda.pdf"
         width="100%"
-        height="1200px"
+        height="1250px"
         style={{ border: "none" }}
         title="CV"
       ></iframe>
+
+      <div>
+        <Footer />
+      </div>
     </>
   );
 };

@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import { TypewriterEffect } from "../Components/ui/typewriter-effect";
 
@@ -28,14 +29,18 @@ const HomePage = () => {
           </p>
           <TypewriterEffect words={words} />
           <div className="mt-10 flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
-            <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-transparent bg-black text-white active:scale-105 dark:border-white">
+            <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-transparent bg-black text-white transition active:scale-105 dark:border-white">
               Technologies
             </button>
-            <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-black bg-white text-black active:scale-105">
+            <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-black bg-white text-black transition active:scale-105">
               Contact
             </button>
           </div>
         </div>
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </>
   );

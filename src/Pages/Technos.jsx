@@ -11,6 +11,7 @@ import {
   tailwindLogo,
   viteLogo,
 } from "../assets/images/logo";
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import TechnoCards from "../Components/TechnoCards";
 
@@ -82,11 +83,11 @@ const Technos = () => {
       </div>
 
       {/* div de tout le corps du component en une grid */}
-      <div className="grid grid-cols-1 gap-20 bg-gray-100">
+      <div className="grid grid-cols-1 gap-20 bg-gray-200">
         {/* Page description */}
         <div className="mt-14 flex flex-col items-center px-4 text-center sm:px-10 md:px-20">
           <p className="martian-mono text-2xl text-gray-900">
-            Voici les technologies que je maîtrise et utilise pour mes projets.
+            Voici les technologies que je maîtrise
           </p>
           <p className="martian-mono mt-5 text-lg text-gray-800">
             Je m'adapte à de nouvelles technologies selon les besoins du projet.
@@ -95,7 +96,7 @@ const Technos = () => {
 
         {/* 1ere row de la grid avec les logos des techno front-end */}
         <div className="flex flex-col items-center">
-          <h1 className="martian-mono mb-10 text-2xl">
+          <h1 className="martian-mono mb-10 text-[23px]">
             Front-end Technologies
           </h1>
           <div className="flex w-full items-center justify-around">
@@ -144,6 +145,10 @@ const Technos = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </div>
   );
