@@ -41,10 +41,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
                 <motion.span
                   initial={{}}
                   key={`char-${index}`}
-                  className={cn(
-                    `hidden text-white`,
-                    word.className,
-                  )}
+                  className={cn(`hidden text-white`, word.className)}
                 >
                   {char}
                 </motion.span>
@@ -59,7 +56,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
   return (
     <div
       className={cn(
-        "text-center text-base font-bold sm:text-xl md:text-3xl lg:text-5xl",
+        "montserrat-strong text-center text-base tracking-tighter sm:text-xl md:text-3xl lg:text-5xl",
         className,
       )}
     >

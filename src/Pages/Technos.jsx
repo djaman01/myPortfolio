@@ -78,27 +78,30 @@ const Technos = () => {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <div className="mt-2">
+      <div className="mt-4 mb-2">
         <Header />
       </div>
 
+
       {/* div de tout le corps du component en une grid */}
-      <div className="grid grid-cols-1 gap-20 bg-gray-200">
+      <div className="grid grid-cols-1 gap-12 bg-gray-200">
         {/* Page description */}
-        <div className="mt-14 flex flex-col items-center px-4 text-center sm:px-10 md:px-20">
-          <p className="martian-mono text-2xl text-gray-900">
-            Voici les technologies que je maîtrise
+
+        <div className="mt-5 text-center">
+          <h1 className="martian-mono text-3xl text-[#214b9b]">Technologies</h1>
+
+          <p className="montserrat-regular mt-2 text-lg text-gray-500">
+              Outils et technologies utilisés dans mes projets web.
           </p>
-          <p className="martian-mono mt-5 text-lg text-gray-800">
-            Je m'adapte à de nouvelles technologies selon les besoins du projet.
-          </p>
+
+          <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#1F2A44]" />
         </div>
 
         {/* 1ere row de la grid avec les logos des techno front-end */}
         <div className="flex flex-col items-center">
-          <h1 className="martian-mono mb-10 text-[23px]">
+          <h2 className="montserrat-strong mb-12 text-2xl">
             Front-end Technologies
-          </h1>
+          </h2>
           <div className="flex w-full items-center justify-around">
             {frontLogos.map((e) => (
               <div key={e.nomTechno}>
@@ -114,7 +117,9 @@ const Technos = () => {
 
         {/* 2eme row: Pas la peine de mettre le <h1> dans un div, car il sera seul et on utilise un div quand il y a plusieurs élements */}
         <div className="mt-10 flex flex-col items-center">
-          <h1 className="martian-mono mb-10 text-2xl">Back-end Technologies</h1>
+          <h2 className="montserrat-strong mb-12 text-2xl">
+            Back-end Technologies
+          </h2>
           <div className="flex w-full items-center justify-around">
             {backLogos.map((e) => (
               <div key={e.nomTechno}>
@@ -130,9 +135,9 @@ const Technos = () => {
 
         {/* 3eme row */}
         <div className="mt-10 mb-20 flex flex-col items-center">
-          <h1 className="martian-mono mb-10 text-2xl">
+          <h2 className="montserrat-strong mb-12 text-2xl">
             Databases Technologies & Management Tools
-          </h1>
+          </h2>
           <div className="flex w-full items-center justify-around">
             {dataBasesLogos.map((e) => (
               <div key={e.nomTechno}>

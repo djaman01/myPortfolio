@@ -24,11 +24,11 @@ const HomePage = () => {
         </div>
 
         <div className="bg-animated-gradient flex flex-1 flex-col items-center justify-center">
-          <p className="mb-10 text-3xl text-neutral-200">
+          <p className="martian-mono mb-12 text-2xl text-neutral-200">
             Jaafar Bendahou, développeur web Freelance
           </p>
           <TypewriterEffect words={words} />
-          <div className="mt-10 flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
+          <div className="font-roboto mt-12 flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
             <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-transparent bg-black text-white transition active:scale-105 dark:border-white">
               Technologies
             </button>
