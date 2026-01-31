@@ -3,12 +3,15 @@ import HomePage from "./HomeSections/HomePage";
 import CV from "./Pages/CV";
 import FrontSites from "./Pages/FrontSites";
 import Technos from "./Pages/Technos";
+import FullStackSites from "./Pages/FullStackSites";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
+        <Route path="/frontSites" element={<FrontSites />}></Route>
+        <Route path="/fullStackSites" element={<FullStackSites />}></Route>
         <Route path="/frontSites" element={<FrontSites />}></Route>
         <Route path="/CV" element={<CV />}></Route>
         <Route path="/technologies" element={<Technos />}></Route>
