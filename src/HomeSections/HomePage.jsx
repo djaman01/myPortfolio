@@ -30,7 +30,7 @@ const HomePage = () => {
           <TypewriterEffect words={words} />
           <div className="font-roboto mt-12 flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
             <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-transparent bg-black text-white transition active:scale-105 dark:border-white">
-              Technologies
+              CV
             </button>
             <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-black bg-white text-black transition active:scale-105">
               Contact
