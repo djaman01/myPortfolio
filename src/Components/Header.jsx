@@ -60,9 +60,11 @@ const Header = () => {
               CV
             </p>
           </Link>
-          <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
-            Contact
-          </p>
+          <Link to="/contact">
+            <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
+              Contact
+            </p>
+          </Link>
         </div>
       </div>
     </>

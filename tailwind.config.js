@@ -8,7 +8,7 @@ export default {
         custom: "0 0 20px 15px rgba(0, 0, 0, 0.1)",
       },
       colors: {
-        "slate-gray": "#6D6D6D",
+        "slateGray": "#6D6D6D",
       },
     },
   },

@@ -4,6 +4,8 @@ import CV from "./Pages/CV";
 import FrontSites from "./Pages/FrontSites";
 import Technos from "./Pages/Technos";
 import FullStackSites from "./Pages/FullStackSites";
+import Contact from "./Pages/Contact";
+
 
 export default function App() {
   return (
@@ -15,6 +17,7 @@ export default function App() {
         <Route path="/frontSites" element={<FrontSites />}></Route>
         <Route path="/CV" element={<CV />}></Route>
         <Route path="/technologies" element={<Technos />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </BrowserRouter>
   );
