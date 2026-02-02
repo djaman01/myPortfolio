@@ -18,12 +18,15 @@ const FrontDisplay = ({
             <img
               src={heroImage}
               alt={textHeroImage}
-              className="rounded-2xl shadow-2xl transition duration-200 hover:scale-[1.02] active:scale-100"
+              className="rounded-2xl shadow-2xl transition duration-200 hover:scale-103 hover:shadow-[0px_7px_35px_rgba(0,20,233,1)] active:scale-100"
             />
           </div>
         </a>
 
-        <div className=" flex flex-col justify-center items-center " data-aos="fade-left" >
+        <div
+          className="flex flex-col items-center justify-center"
+          data-aos="fade-left"
+        >
           <h2 className="montserrat-strong mt-2 mb-5 text-center text-2xl">
             {siteName}
           </h2>
@@ -34,9 +37,7 @@ const FrontDisplay = ({
           </div>
           {/* https://github.com/djaman01/fisatex */}
           <div className="mt-6 flex flex-col items-center justify-center gap-2">
-            <p className="montserrat-regular text-lg underline">
-              Code source:
-            </p>
+            <p className="montserrat-regular text-lg underline">Code source:</p>
             <a
               href={linkGithub}
               target="_blank"

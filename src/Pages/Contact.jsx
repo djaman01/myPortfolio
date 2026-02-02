@@ -26,7 +26,8 @@ const Contact = () => {
         {/* Mail, telephone et Linkedin */}
         <div className="montserrat-regular mx-auto mt-10 flex h-20 w-250 items-center justify-around">
           <a
-            href=""
+            href="mailto:jaafar.devnet@gmail.com"
+            aria-label="Send me an email"
             className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 active:scale-100"
           >
             <FaEnvelope size={30} />
@@ -35,16 +36,16 @@ const Contact = () => {
             </span>
           </a>
           <a
-            href=""
+            href="tel:+212619635336"
             className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 active:scale-100"
           >
             <FaPhoneAlt size={30} />
-            <span className="ml-3" href="">
-              +212 6 19 63 53 36
-            </span>
+            <span className="ml-3">+212 6 19 63 53 36</span>
           </a>
           <a
-            href=""
+            href="https://www.linkedin.com/in/jaafar-bendahou-b1b884289/"
+            target="_blank"
+            rel="noopener"
             className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 active:scale-100"
           >
             <FaLinkedin size={30} />
@@ -55,7 +56,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="pb-10 text-center mt-10">
+        <div className="mt-10 pb-10 text-center">
           <ContactForm />
         </div>
       </main>

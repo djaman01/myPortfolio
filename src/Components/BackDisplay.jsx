@@ -4,8 +4,12 @@ const BackDisplay = ({
   linkSite,
   heroImage,
   textHeroImage,
+  hoverScale,
+  activeScale,
+  hoverBg,
   siteName,
   presentation,
+  presentation2,
   frontend,
   backend,
   database,
@@ -24,7 +28,7 @@ const BackDisplay = ({
             <img
               src={heroImage}
               alt={textHeroImage}
-              className="rounded-2xl shadow-2xl transition duration-200 hover:scale-[1.02] active:scale-100"
+              className={`rounded-2xl shadow-2xl transition duration-200 ${hoverScale} ${activeScale} ${hoverBg}`}
             />
           </div>
         </a>
@@ -37,7 +41,15 @@ const BackDisplay = ({
             {siteName}
           </h2>
           <div className="montserrat-regular flex flex-col items-center justify-center gap-5">
-            <p className="text-xl">{presentation}</p>
+            <div className=" h-full flex flex-col gap-2 ">
+              <p className="w-150 text-xl">
+                {presentation}
+              </p>
+              <p className="w-150 text-xl">
+                {presentation2}
+              </p>
+            </div>
+
             <div className="flex h-32 flex-col justify-around text-lg">
               <p>
                 <span className="font-bold">{frontend}</span>

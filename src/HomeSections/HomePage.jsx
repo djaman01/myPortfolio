@@ -16,6 +16,13 @@ const HomePage = () => {
     { text: "besoins" },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  };
+
   return (
     <>
       {/* flex flex-col pour que le header et la "Hero Section" soit l'un en-dessous de l'autre et je mets min-h-screen ici pour ne pas avoir de possibilité de scrolldown  */}
@@ -31,12 +38,18 @@ const HomePage = () => {
           <TypewriterEffect words={words} />
           <div className="font-roboto mt-12 flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
             <Link to="/CV">
-              <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-transparent bg-black text-white transition active:scale-105 dark:border-white">
+              <button
+                onClick={scrollToTop}
+                className="text-md h-10 w-40 cursor-pointer rounded-xl border border-transparent bg-black text-white transition hover:scale-105 active:scale-100 dark:border-white"
+              >
                 CV
               </button>
             </Link>
             <Link to="/contact">
-              <button className="text-md h-10 w-40 cursor-pointer rounded-xl border border-black bg-white text-black transition active:scale-105">
+              <button
+                onClick={scrollToTop}
+                className="text-md h-10 w-40 cursor-pointer rounded-xl border border-black bg-white text-black transition hover:scale-105 active:scale-100"
+              >
                 Contact
               </button>
             </Link>

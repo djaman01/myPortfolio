@@ -44,8 +44,12 @@ const FullStackSites = () => {
               linkSite="https://www.phenixdeals.com/"
               heroImage={phenixDealsHomepage}
               textHeroImage="Phenixdeals.com: Galerie d'art virtuelle"
+              hoverScale="hover:scale-103"
+              activeScale="active:scale-100"
+              hoverBg="hover:shadow-[0px_7px_35px_rgba(0,106,202,1)]"
               siteName="Phenixdeals.com"
-              presentation="Site de vente d'œuvres d'art créé pour une galerie"
+              presentation="Site de vente d'œuvres d'art créé pour une galerie:"
+              presentation2="présentation des oeuvres en vente et intégration d'une interface d'administration pour leur gestion. "
               frontend="Front-end:"
               backend="Back-end:"
               database="Database:"
@@ -61,7 +65,8 @@ const FullStackSites = () => {
               heroImage={portailVMHomepage}
               textHeroImage="SaaS Synthemedic: labo pharmaceutique"
               siteName=" Laboratoire pharmaceutique Synthemedic"
-              presentation="SaaS privé développé pour un usage métier interne "
+              presentation="SaaS privé développé pour un usage métier interne permettant:"
+              presentation2="la collecte de données via formulaires, leur analyse à travers des statistiques et la gestion des accès utilisateurs"
               frontend="Front-end:"
               backend="Back-end:"
               database="Database:"
