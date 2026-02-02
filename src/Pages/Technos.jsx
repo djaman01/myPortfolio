@@ -61,7 +61,7 @@ const Technos = () => {
     },
     {
       imgLogo: phpmyadminLogo,
-      nomTechno: "PHPmyAdmin",
+      nomTechno: "phpMyAdmin",
       bgAnimatedColor: "bg-yellow-500",
     },
     {

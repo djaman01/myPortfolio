@@ -28,7 +28,7 @@ const Contact = () => {
           <a
             href="mailto:jaafar.devnet@gmail.com"
             aria-label="Send me an email"
-            className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 active:scale-100"
+            className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 hover:shadow-[0px_1px_8px_rgba(0,106,202,1)] active:scale-100"
           >
             <FaEnvelope size={30} />
             <span className="ml-3" href="">
@@ -37,7 +37,7 @@ const Contact = () => {
           </a>
           <a
             href="tel:+212619635336"
-            className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 active:scale-100"
+            className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 hover:shadow-[0px_1px_8px_rgba(0,106,202,1)] active:scale-100"
           >
             <FaPhoneAlt size={30} />
             <span className="ml-3">+212 6 19 63 53 36</span>
@@ -46,7 +46,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/jaafar-bendahou-b1b884289/"
             target="_blank"
             rel="noopener"
-            className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 active:scale-100"
+            className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 hover:shadow-[0px_1px_8px_rgba(0,106,202,1)] active:scale-100"
           >
             <FaLinkedin size={30} />
             <span className="ml-3" href="">
