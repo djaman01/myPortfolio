@@ -84,7 +84,7 @@ const Technos = () => {
 
 
       {/* div de tout le corps du component en une grid */}
-      <div className="grid grid-cols-1 gap-12 bg-gray-200">
+      <div className="grid grid-cols-1 gap-12 bg-gray-100">
         {/* Page description */}
 
         <div className="mt-5 text-center">
