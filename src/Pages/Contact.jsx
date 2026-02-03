@@ -4,7 +4,20 @@ import Header from "../Components/Header";
 
 import { FaEnvelope, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      offset: 100,
+      duration: 1000,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col">
       <div className="mt-4 mb-2">
@@ -29,6 +42,7 @@ const Contact = () => {
             href="mailto:jaafar.devnet@gmail.com"
             aria-label="Send me an email"
             className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 hover:shadow-[0px_1px_8px_rgba(0,106,202,1)] active:scale-100"
+            data-aos="fade-right"
           >
             <FaEnvelope size={30} />
             <span className="ml-3">jaafar.devnet@gmail.com</span>
@@ -36,6 +50,7 @@ const Contact = () => {
           <a
             href="tel:+212619635336"
             className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 hover:shadow-[0px_1px_8px_rgba(0,106,202,1)] active:scale-100"
+            data-aos="flip-up"
           >
             <FaPhoneAlt size={30} />
             <span className="ml-3">+212 6 19 63 53 36</span>
@@ -45,6 +60,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener"
             className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 hover:shadow-[0px_1px_8px_rgba(0,106,202,1)] active:scale-100"
+            data-aos="fade-left"
           >
             <FaLinkedin size={30} />
             <span className="ml-3">Jaafar Bendahou</span>
