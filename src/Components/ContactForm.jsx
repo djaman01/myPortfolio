@@ -63,7 +63,7 @@ const ContactForm = () => {
           <Form>
             <div className="">
               <div className="mb-10">
-                <label htmlFor="name" className="font-roboto-bold text-lg">
+                <label htmlFor="name" className="montserrat-strong text-lg">
                   Nom
                 </label>
                 <Field
@@ -71,7 +71,7 @@ const ContactForm = () => {
                   name="name"
                   type="text"
                   placeholder="Name"
-                  className="font-roboto mx-auto block w-150 border-b  px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none"
+                  className="montserrat-regular mx-auto block w-150 border-b  px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none"
                 />
                 {/* ErrorMessage est ce qui permet de voir "Requis", si on appuie sur le champ mais qu'on ne le remplit pas et qu'on passe à un autre champ */}
                 <ErrorMessage
@@ -82,7 +82,7 @@ const ContactForm = () => {
               </div>
 
               <div className="mb-10">
-                <label htmlFor="societe" className="font-roboto-bold text-lg">
+                <label htmlFor="societe" className="montserrat-strong text-lg">
                   Société
                 </label>
                 <Field
@@ -90,14 +90,14 @@ const ContactForm = () => {
                   name="societe"
                   type="text"
                   placeholder="Company"
-                  className="font-roboto mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none"
+                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none"
                 />
               </div>
 
               <div className="mb-10">
                 <label
                   htmlFor="email"
-                  className="font-roboto-bold text-lg max-lg:text-xl"
+                  className="montserrat-strong text-lg max-lg:text-xl"
                 >
                   E-mail
                 </label>
@@ -106,7 +106,7 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   placeholder="E-mail"
-                  className="font-roboto mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none"
+                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none"
                 />
                 <ErrorMessage
                   name="email"
@@ -118,7 +118,7 @@ const ContactForm = () => {
               <div className="col-span-2">
                 <label
                   htmlFor="message"
-                  className="font-roboto-bold text-lg max-lg:text-xl"
+                  className="montserrat-strong text-lg max-lg:text-xl"
                 >
                   Message
                 </label>
@@ -128,7 +128,7 @@ const ContactForm = () => {
                   as="textarea"
                   placeholder="Message"
                   rows="10"
-                  className="font-roboto mx-auto block w-150 rounded border leading-tight focus:border-blue-500 focus:outline-none max-lg:w-72"
+                  className="pl-3 pt-1 montserrat-regular mx-auto block w-150 rounded border leading-tight focus:border-blue-500 focus:outline-none max-lg:w-72"
                 />
                 <ErrorMessage
                   name="message"
