@@ -31,9 +31,7 @@ const Contact = () => {
             className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 hover:shadow-[0px_1px_8px_rgba(0,106,202,1)] active:scale-100"
           >
             <FaEnvelope size={30} />
-            <span className="ml-3" href="">
-              jaafar.devnet@gmail.com
-            </span>
+            <span className="ml-3">jaafar.devnet@gmail.com</span>
           </a>
           <a
             href="tel:+212619635336"
@@ -49,9 +47,7 @@ const Contact = () => {
             className="flex h-12 w-72 items-center justify-center rounded-3xl border border-[#6D6D6D] bg-white shadow-lg transition hover:scale-103 hover:shadow-[0px_1px_8px_rgba(0,106,202,1)] active:scale-100"
           >
             <FaLinkedin size={30} />
-            <span className="ml-3" href="">
-              Jaafar Bendahou
-            </span>
+            <span className="ml-3">Jaafar Bendahou</span>
           </a>
         </div>
 

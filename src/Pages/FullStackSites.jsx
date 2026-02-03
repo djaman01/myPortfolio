@@ -9,6 +9,7 @@ import BackDisplay from "../Components/BackDisplay";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 
+
 const FullStackSites = () => {
   useEffect(() => {
     Aos.init({
@@ -56,7 +57,8 @@ const FullStackSites = () => {
               frontTechnos=" React.js / Vite.js / Tailwind CSS"
               backTechnos=" Node.js / Express.js / Mongoose"
               dbTechnos=" Mongo DB / Mongo DB Atlas"
-              linkGithub="https://github.com/djaman01/Phenixdeals-Vite"
+              linkGithubFront="https://github.com/djaman01/Phenixdeals-Vite"
+              linkGithubBack="https://github.com/djaman01/Phenixdeals-back"
               displayCode="Yes"
             />
 

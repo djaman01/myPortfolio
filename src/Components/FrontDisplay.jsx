@@ -24,10 +24,10 @@ const FrontDisplay = ({
         </a>
 
         <div
-          className="flex flex-col items-center justify-center"
+          className="flex flex-col items-center"
           data-aos="fade-left"
         >
-          <h2 className="montserrat-strong mt-2 mb-5 text-center text-2xl">
+          <h2 className="montserrat-strong mb-5 text-center text-2xl">
             {siteName}
           </h2>
           <div className="montserrat-regular flex flex-col items-center justify-center gap-5">
