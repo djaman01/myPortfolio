@@ -1,23 +1,24 @@
 import { Link } from "react-router-dom";
 import { logoJDev } from "../assets/images/logo";
+import TheSidebar from "./TheSideBar";
 
 const Header = () => {
   return (
     <>
-      <div className="max-container flex w-full items-center">
+      <div className="max-container flex w-full items-center justify-between">
         <div className="flex justify-center">
           <Link to="/">
             <img
               src={logoJDev}
               alt="logo JDev"
               width={130}
-              className="cursor-pointer bg-white"
+              className="w-32 max-lg:w-31 cursor-pointer bg-white ml-4"
             />
           </Link>
         </div>
 
         {/* ! Il faut mettre les padding et border (transparent) avant le hover ou active pour ne pas qu'il y ait de chgts de marges après hover */}
-        <div className="font-roboto mr-24 flex flex-1 justify-center gap-14 text-xl leading-normal">
+        <div className="font-roboto mr-24 flex flex-1 justify-center gap-14 text-xl leading-normal max-lg:hidden">
           <Link to="/">
             <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
               Accueil
@@ -65,6 +66,10 @@ const Header = () => {
               Contact
             </p>
           </Link>
+        </div>
+
+        <div className="hidden max-lg:block mr-7">
+          <TheSidebar />
         </div>
       </div>
     </>
