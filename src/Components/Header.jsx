@@ -1,13 +1,25 @@
 import { Link, useLocation } from "react-router-dom";
 import TheSidebar from "./TheSideBar";
 
+import { logoJDev } from "../assets/images/logo";
+
 const Header = () => {
   const location = useLocation();
 
   const isHomepage = location.pathname === "/";
   return (
     <>
-      <div className="max-container flex w-full items-center justify-between">
+      <div className="max-container flex h-13 w-full items-center justify-between">
+        <div className="flex justify-center">
+          <Link to="/">
+            <img
+              src={logoJDev}
+              alt="logo JDev"
+              className={`${isHomepage ? "hidden" : "ml-4 w-28 cursor-pointer bg-white max-lg:w-31"}`}
+            />
+          </Link>
+        </div>
+
         {/* ! Il faut mettre les padding et border (transparent) avant le hover ou active pour ne pas qu'il y ait de chgts de marges après hover */}
         <div className="font-roboto mr-24 flex flex-1 justify-center gap-14 text-xl leading-normal max-lg:hidden">
           <Link to="/">
