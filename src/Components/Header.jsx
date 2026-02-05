@@ -32,7 +32,7 @@ const Header = () => {
 
           <div className="group relative">
             <p
-              className={`${isHomepage ? "cursor-pointer px-2 py-1 text-white" : "cursor-pointer rounded-lg px-2 py-1 hover:bg-[#dde7f6]"}`}
+              className={`${isHomepage ? "cursor-pointer border border-transparent px-2 py-1 text-white" : "cursor-pointer rounded-lg px-2 py-1 hover:bg-[#dde7f6]"}`}
             >
               Portfolio
             </p>
@@ -60,21 +60,21 @@ const Header = () => {
 
           <Link to="/technologies">
             <div
-              className={`${isHomepage ? "cursor-pointer px-2 py-1 text-white active:text-blue-500" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
+              className={`${isHomepage ? "cursor-pointer border border-transparent px-2 py-1 text-white active:text-blue-500" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
             >
               Technologies
             </div>
           </Link>
           <Link to="/CV">
             <p
-              className={`${isHomepage ? "cursor-pointer px-2 py-1 text-white active:text-blue-500" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
+              className={`${isHomepage ? "cursor-pointer border border-transparent px-2 py-1 text-white active:text-blue-500" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
             >
               CV
             </p>
           </Link>
           <Link to="/contact">
             <p
-              className={`${isHomepage ? "cursor-pointer px-2 py-1 text-white active:text-blue-500" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
+              className={`${isHomepage ? "cursor-pointer border border-transparent px-2 py-1 text-white active:text-blue-500" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
             >
               Contact
             </p>
