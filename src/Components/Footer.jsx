@@ -4,13 +4,13 @@ const Footer = () => {
   return (
     <>
       <footer className="flex flex-col items-center gap-5 bg-gray-900 py-2 text-white">
-        <div className="mt-5 w-105 text-center">
+        <div className="mt-5 w-105 text-center max-lg:w-full">
           <p className="martian-mono text-lg">Jaafar Bendahou</p>
-          <p className="montserrat-regular">
+          <p className="montserrat-regular mt-2">
             {" "}
-            Full-stack developer - React • Node • SQL • NoSQL
+            Développeur Full-stack - React • Node.js
           </p>
-          <p className="montserrat-regular">Freelance</p>
+          <p className="montserrat-regular mt-1">Freelance</p>
         </div>
         {/* rel="noopener" coupe la connexion entre l'onglet nouvellement ouvert grace à target="_blank" et la page d'origine, pour eviter tout problemes */}
         <div className="flex w-96 items-center justify-center gap-10">

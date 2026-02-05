@@ -31,10 +31,20 @@ const HomePage = () => {
           <Header />
         </div>
 
+        {/* Desktop version: max-lg:hidden because it's in 1 line: so there is a , and developpeur without D */}
         <div className="flex flex-1 flex-col items-center justify-center">
-          <p className="martian-mono mb-12 text-2xl text-neutral-200">
+          <p className="martian-mono mb-12 text-2xl text-neutral-200 max-lg:hidden">
             Jaafar Bendahou, développeur web Freelance
           </p>
+          {/* Mobile version: lg:hidden because in 2 lines, no coma and developpeur with D */}
+          <div className="martian-mono mb-12 flex max-lg:flex-col max-lg:items-center max-lg:gap-5 lg:hidden lg:gap-1">
+            <p className="text-2xl text-neutral-200 max-lg:text-xl">
+              Jaafar Bendahou
+            </p>
+            <p className="text-2xl text-neutral-200 max-lg:text-xl">
+              Développeur web Freelance
+            </p>
+          </div>
           <TypewriterEffect words={words} />
           <div className="font-roboto mt-12 flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
             <Link to="/CV">
