@@ -4,9 +4,10 @@ import Header from "../Components/Header";
 const CV = () => {
   return (
     <div className="flex min-h-screen flex-col">
-      <div className="mt-4 mb-2">
-        <Header />
-      </div>
+     <div className="mt-5 mb-3">
+          <Header />
+        </div>
+
 
       <div className="mt-5 mb-10 text-center">
         <h1 className="martian-mono text-3xl text-[#214b9b]">

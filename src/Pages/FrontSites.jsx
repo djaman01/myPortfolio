@@ -19,9 +19,10 @@ const FrontSites = () => {
 
   return (
     <div className="flex min-h-screen flex-col overflow-hidden">
-      <div className="mt-4 mb-2">
+      <div className="mt-5 mb-3">
         <Header />
       </div>
+
       <main className="bg-gray-100">
         <div className="mt-5 text-center">
           <h1 className="martian-mono text-3xl text-[#214b9b]">

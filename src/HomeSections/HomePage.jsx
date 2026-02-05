@@ -26,12 +26,12 @@ const HomePage = () => {
   return (
     <>
       {/* flex flex-col pour que le header et la "Hero Section" soit l'un en-dessous de l'autre et je mets min-h-screen ici pour ne pas avoir de possibilité de scrolldown  */}
-      <div className="flex min-h-screen flex-col">
-        <div className="mt-4 mb-2">
+      <div className="bg-animated-gradient flex min-h-screen flex-col">
+        <div className="mt-5 mb-3">
           <Header />
         </div>
 
-        <div className="bg-animated-gradient flex flex-1 flex-col items-center justify-center">
+        <div className="flex flex-1 flex-col items-center justify-center">
           <p className="martian-mono mb-12 text-2xl text-neutral-200">
             Jaafar Bendahou, développeur web Freelance
           </p>

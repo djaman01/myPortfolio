@@ -1,32 +1,27 @@
-import { Link } from "react-router-dom";
-import { logoJDev } from "../assets/images/logo";
+import { Link, useLocation } from "react-router-dom";
 import TheSidebar from "./TheSideBar";
 
 const Header = () => {
+  const location = useLocation();
+
+  const isHomepage = location.pathname === "/";
   return (
     <>
       <div className="max-container flex w-full items-center justify-between">
-        <div className="flex justify-center">
-          <Link to="/">
-            <img
-              src={logoJDev}
-              alt="logo JDev"
-              width={130}
-              className="w-32 max-lg:w-31 cursor-pointer bg-white ml-4"
-            />
-          </Link>
-        </div>
-
         {/* ! Il faut mettre les padding et border (transparent) avant le hover ou active pour ne pas qu'il y ait de chgts de marges après hover */}
         <div className="font-roboto mr-24 flex flex-1 justify-center gap-14 text-xl leading-normal max-lg:hidden">
           <Link to="/">
-            <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
+            <p
+              className={`${isHomepage ? "hidden" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
+            >
               Accueil
             </p>
           </Link>
 
           <div className="group relative">
-            <p className="cursor-pointer rounded-lg px-2 py-1 hover:bg-[#dde7f6]">
+            <p
+              className={`${isHomepage ? "cursor-pointer px-2 py-1 text-white" : "cursor-pointer rounded-lg px-2 py-1 hover:bg-[#dde7f6]"}`}
+            >
               Portfolio
             </p>
 
@@ -52,23 +47,29 @@ const Header = () => {
           </div>
 
           <Link to="/technologies">
-            <div className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
+            <div
+              className={`${isHomepage ? "cursor-pointer px-2 py-1 text-white active:text-blue-500" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
+            >
               Technologies
             </div>
           </Link>
           <Link to="/CV">
-            <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
+            <p
+              className={`${isHomepage ? "cursor-pointer px-2 py-1 text-white active:text-blue-500" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
+            >
               CV
             </p>
           </Link>
           <Link to="/contact">
-            <p className="cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]">
+            <p
+              className={`${isHomepage ? "cursor-pointer px-2 py-1 text-white active:text-blue-500" : "cursor-pointer rounded-lg border border-transparent px-2 py-1 hover:bg-[#dde7f6] active:border-[#1F2A44]"}`}
+            >
               Contact
             </p>
           </Link>
         </div>
 
-        <div className="hidden max-lg:block mr-7">
+        <div className="mr-7 hidden max-lg:ml-auto max-lg:flex">
           <TheSidebar />
         </div>
       </div>

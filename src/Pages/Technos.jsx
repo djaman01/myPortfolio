@@ -78,10 +78,9 @@ const Technos = () => {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <div className="mt-4 mb-2">
+      <div className="mt-5 mb-3">
         <Header />
       </div>
-
 
       {/* div de tout le corps du component en une grid */}
       <div className="grid grid-cols-1 gap-12 bg-gray-100">
@@ -91,7 +90,7 @@ const Technos = () => {
           <h1 className="martian-mono text-3xl text-[#214b9b]">Technologies</h1>
 
           <p className="montserrat-regular mt-2 text-lg text-gray-500">
-              Outils et technologies utilisés dans mes projets web.
+            Outils et technologies utilisés dans mes projets web.
           </p>
 
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#1F2A44]" />
