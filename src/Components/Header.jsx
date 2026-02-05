@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import TheSidebar from "./TheSideBar";
+import TheSidebar from "./TheSidebar";
 
 import { logoJDev } from "../assets/images/logo";
 

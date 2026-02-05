@@ -31,9 +31,7 @@ const HomePage = () => {
           <Header />
         </div>
 
-        {/* -translate-y = moves the content up / tranlate-y = moves the content down*/}
-        {/* I use translate instead of mt-* because the layout is already centered with flex flex-col justify-center /Margins would modify the layout spacing, while translate only adjusts the visual position without affecting centering or other elements.*/}
-        <div className="flex flex-1 -translate-y-8 flex-col items-center justify-center max-lg:-translate-y-4">
+        <div className="flex flex-1 flex-col items-center justify-center">
           {/* Desktop version: max-lg:hidden because it's in 1 line: so there is a , and developpeur without D */}
           <p className="martian-mono mb-12 text-2xl text-neutral-200 max-lg:hidden">
             Jaafar Bendahou, développeur web Freelance
