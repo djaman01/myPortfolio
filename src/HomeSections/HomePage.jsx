@@ -33,11 +33,11 @@ const HomePage = () => {
 
         <div className="flex flex-1 flex-col items-center justify-center">
           {/* Desktop version: max-lg:hidden because it's in 1 line: so there is a , and developpeur without D */}
-          <p className="martian-mono mb-12 text-2xl text-neutral-200 max-lg:hidden">
+          <p className="martian-mono -mt-20 mb-12 text-2xl text-neutral-200 max-lg:hidden">
             Jaafar Bendahou, développeur web Freelance
           </p>
           {/* Mobile version: lg:hidden because in 2 lines, no coma and developpeur with D */}
-          <div className="martian-mono mb-12 flex max-lg:flex-col max-lg:items-center max-lg:gap-5 lg:hidden">
+          <div className="martian-mono -mt-10 mb-12 flex flex-col items-center gap-3 lg:hidden">
             <p className="text-2xl text-neutral-200 max-lg:text-xl">
               Jaafar Bendahou
             </p>
@@ -45,7 +45,9 @@ const HomePage = () => {
               Développeur web Freelance
             </p>
           </div>
-          <TypewriterEffect words={words} />
+          <div className="max-lg:h-20">
+            <TypewriterEffect words={words} />
+          </div>
           <div className="font-roboto mt-12 flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
             <Link to="/CV">
               <button
