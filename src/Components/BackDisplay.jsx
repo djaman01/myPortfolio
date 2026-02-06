@@ -23,7 +23,7 @@ const BackDisplay = ({
   return (
     <>
       {/* Website presentation: Hero section + Tex */}
-      <div className="mt-10 grid grid-cols-2">
+      <div className="mt-10 grid grid-cols-2 max-lg:mt-8 max-lg:grid-cols-1">
         <a href={linkSite} target="_blank" rel="noopener">
           <div data-aos="fade-right">
             <img
@@ -35,16 +35,16 @@ const BackDisplay = ({
         </a>
 
         <div className="flex flex-col items-center" data-aos="fade-left">
-          <h2 className="montserrat-strong mb-5 text-center text-2xl">
+          <h2 className="montserrat-strong mb-5 text-center text-2xl max-lg:mb-2 max-lg:pt-5 max-sm:w-96">
             {siteName}
           </h2>
-          <div className="montserrat-regular flex flex-col items-center justify-center gap-5">
-            <div className="flex h-max flex-col gap-2">
-              <p className="w-150 text-xl">{presentation}</p>
-              <p className="w-150 text-xl">{presentation2}</p>
+          <div className="montserrat-regular flex flex-col items-center justify-center gap-5 max-lg:gap-2">
+            <div className="flex h-max w-150 flex-col gap-2 max-sm:w-90">
+              <p className="text-xl">{presentation}</p>
+              <p className="text-xl">{presentation2}</p>
             </div>
 
-            <div className="flex h-max flex-col gap-2 text-lg">
+            <div className="flex h-max flex-col gap-2 text-lg max-lg:mt-5">
               <p>
                 <span className="font-bold">{frontend}</span>
                 {frontTechnos}
@@ -60,7 +60,7 @@ const BackDisplay = ({
             </div>
           </div>
           {displayCode === "Yes" && (
-            <div className="flex w-100 justify-around items-center mt-5">
+            <div className="mt-5 flex w-100 items-center justify-around">
               <div className="flex flex-col items-center justify-center gap-2">
                 <p className="montserrat-regular text-lg underline">
                   Code front-end:
@@ -71,7 +71,7 @@ const BackDisplay = ({
                   rel="noopener"
                   className="transition hover:scale-110 active:scale-100"
                 >
-                  <FaGithub size={30} />
+                  <FaGithub size={37} />
                 </a>
               </div>
               <div className="flex flex-col items-center justify-center gap-2">
@@ -84,7 +84,7 @@ const BackDisplay = ({
                   rel="noopener"
                   className="transition hover:scale-110 active:scale-100"
                 >
-                  <FaGithub size={30} />
+                  <FaGithub size={37} />
                 </a>
               </div>
             </div>

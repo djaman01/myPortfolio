@@ -36,7 +36,7 @@ const FrontDisplay = ({
             <p className="text-lg">{createdWith}</p>
           </div>
           {/* https://github.com/djaman01/fisatex */}
-          <div className="mt-6 flex flex-col items-center justify-center gap-2 max-lg:mt-3">
+          <div className="mt-5 flex flex-col items-center justify-center gap-2 max-lg:mt-3">
             <p className="montserrat-regular text-lg underline">Code source:</p>
             <a
               href={linkGithub}

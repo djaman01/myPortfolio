@@ -39,7 +39,7 @@ const FullStackSites = () => {
           </div>
 
           {/* Flex container for the 2 grids so that i can make a gap */}
-          <div className="mx-9 mt-10 mb-24 flex flex-1 flex-col gap-20">
+          <div className="mx-9 mt-10 mb-24 flex flex-1 flex-col gap-20 max-lg:mt-0 max-md:gap-10 max-sm:gap-5">
             {/* Phenixdeals.com */}
             <BackDisplay
               linkSite="https://www.phenixdeals.com/"
