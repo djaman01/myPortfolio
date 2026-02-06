@@ -4,10 +4,9 @@ import Header from "../Components/Header";
 const CV = () => {
   return (
     <div className="flex min-h-screen flex-col">
-     <div className="mt-5 mb-3">
-          <Header />
-        </div>
-
+      <div className="mt-5 mb-3">
+        <Header />
+      </div>
 
       <div className="mt-5 mb-10 text-center">
         <h1 className="martian-mono text-3xl text-[#214b9b]">
@@ -24,7 +23,7 @@ const CV = () => {
       <iframe
         src="/CV-JaafarBenda.pdf"
         width="100%"
-        height="1250px"
+        className="w-full max-lg:h-163 lg:h-320"
         style={{ border: "none" }}
         title="CV"
       ></iframe>
