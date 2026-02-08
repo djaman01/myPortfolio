@@ -12,7 +12,7 @@ const FrontDisplay = ({
   return (
     <>
       {/* Website presentation: Hero section + Tex */}
-      <div className="mt-10 grid grid-cols-2 max-lg:grid-cols-1 max-lg:mt-8 ">
+      <div className="grid grid-cols-2 max-lg:mt-8 max-lg:grid-cols-1">
         <a href={linkSite} target="_blank" rel="noopener">
           <div data-aos="fade-right">
             <img
@@ -23,11 +23,8 @@ const FrontDisplay = ({
           </div>
         </a>
 
-        <div
-          className="flex flex-col items-center"
-          data-aos="fade-left"
-        >
-          <h2 className="montserrat-strong mb-5 text-center text-2xl max-lg:pt-5 max-lg:mb-2">
+        <div className="flex flex-col items-center" data-aos="fade-left">
+          <h2 className="montserrat-strong mb-5 text-center text-2xl max-lg:mb-2 max-lg:pt-5">
             {siteName}
           </h2>
           <div className="montserrat-regular flex flex-col items-center justify-center gap-5 max-lg:gap-2">

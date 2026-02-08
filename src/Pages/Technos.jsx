@@ -83,9 +83,8 @@ const Technos = () => {
       </div>
 
       {/* div de tout le corps du component en une grid */}
-      <div className="grid grid-cols-1 gap-12 bg-gray-100">
-        {/* Page description */}
-
+      <div className="grid grid-cols-1 bg-gray-100">
+        {/* Titre page */}
         <div className="mt-5 text-center">
           <h1 className="martian-mono text-3xl text-[#214b9b]">Technologies</h1>
 
@@ -97,8 +96,8 @@ const Technos = () => {
         </div>
 
         {/* 1ere row de la grid avec les logos des techno front-end */}
-        <div className="flex flex-col items-center">
-          <h2 className="montserrat-strong mb-12 text-2xl">
+        <div className="mt-20 flex flex-col items-center">
+          <h2 className="montserrat-strong mb-13 text-2xl leading-none">
             Front-end Technologies
           </h2>
           <div className="flex w-full items-center justify-around">
@@ -115,8 +114,8 @@ const Technos = () => {
         </div>
 
         {/* 2eme row: Pas la peine de mettre le <h1> dans un div, car il sera seul et on utilise un div quand il y a plusieurs élements */}
-        <div className="mt-10 flex flex-col items-center">
-          <h2 className="montserrat-strong mb-12 text-2xl">
+        <div className="mt-20 flex flex-col items-center">
+          <h2 className="montserrat-strong mb-13 text-2xl leading-none">
             Back-end Technologies
           </h2>
           <div className="flex w-full items-center justify-around">
@@ -133,8 +132,8 @@ const Technos = () => {
         </div>
 
         {/* 3eme row */}
-        <div className="mt-10 mb-20 flex flex-col items-center">
-          <h2 className="montserrat-strong mb-12 text-2xl">
+        <div className="mt-20 mb-28 flex flex-col items-center">
+          <h2 className="montserrat-strong mb-13 text-2xl leading-none">
             Databases Technologies & Management Tools
           </h2>
           <div className="flex w-full items-center justify-around">
