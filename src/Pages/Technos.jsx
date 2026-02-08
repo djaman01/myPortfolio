@@ -96,11 +96,11 @@ const Technos = () => {
         </div>
 
         {/* 1ere row de la grid avec les logos des techno front-end */}
-        <div className="mt-20 flex flex-col items-center">
+        <div className="mt-20 flex flex-col items-center max-lg:mt-16">
           <h2 className="montserrat-strong mb-13 text-2xl leading-none">
             Front-end Technologies
           </h2>
-          <div className="flex w-full items-center justify-around">
+          <div className="flex w-full items-center justify-around max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
             {frontLogos.map((e) => (
               <div key={e.nomTechno}>
                 <TechnoCards
@@ -118,7 +118,7 @@ const Technos = () => {
           <h2 className="montserrat-strong mb-13 text-2xl leading-none">
             Back-end Technologies
           </h2>
-          <div className="flex w-full items-center justify-around">
+          <div className="flex w-full items-center justify-around max-md:grid max-md:w-max max-md:grid-cols-2 max-md:gap-x-28 max-md:gap-y-10 max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
             {backLogos.map((e) => (
               <div key={e.nomTechno}>
                 <TechnoCards
@@ -133,10 +133,10 @@ const Technos = () => {
 
         {/* 3eme row */}
         <div className="mt-20 mb-28 flex flex-col items-center">
-          <h2 className="montserrat-strong mb-13 text-2xl leading-none">
+          <h2 className="montserrat-strong mb-13 text-2xl leading-none max-lg:text-center">
             Databases Technologies & Management Tools
           </h2>
-          <div className="flex w-full items-center justify-around">
+          <div className="flex w-full items-center justify-around max-md:grid max-md:w-max max-md:grid-cols-2 max-md:gap-x-28 max-md:gap-y-10 max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
             {dataBasesLogos.map((e) => (
               <div key={e.nomTechno}>
                 <TechnoCards

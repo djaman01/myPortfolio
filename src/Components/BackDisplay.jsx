@@ -23,7 +23,7 @@ const BackDisplay = ({
   return (
     <>
       {/* Website presentation: Hero section + Tex */}
-      <div className="grid grid-cols-2 max-lg:mt-8 max-lg:grid-cols-1">
+      <div className="grid grid-cols-2 max-lg:mt-12 max-lg:grid-cols-1">
         <a href={linkSite} target="_blank" rel="noopener">
           <div data-aos="fade-right">
             <img
