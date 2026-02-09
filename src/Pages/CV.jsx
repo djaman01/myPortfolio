@@ -8,7 +8,7 @@ const CV = () => {
         <Header />
       </div>
 
-      <div className="mt-5 mb-10 text-center">
+      <div className="mt-5 mb-16 max-lg:mb-12 text-center">
         <h1 className="martian-mono text-3xl text-[#214b9b]">
           Curriculum vitæ
         </h1>
@@ -23,7 +23,7 @@ const CV = () => {
       <iframe
         src="/CV-JaafarBenda.pdf"
         width="100%"
-        className="w-full max-lg:h-163 lg:h-320"
+        className="w-full max-lg:h-170 lg:h-320"
         style={{ border: "none" }}
         title="CV"
       ></iframe>

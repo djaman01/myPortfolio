@@ -96,7 +96,7 @@ const Technos = () => {
         </div>
 
         {/* 1ere row de la grid avec les logos des techno front-end */}
-        <div className="mt-20 flex flex-col items-center max-lg:mt-16">
+        <div className="mt-16 flex flex-col items-center max-lg:mt-12">
           <h2 className="montserrat-strong mb-13 text-2xl leading-none">
             Front-end Technologies
           </h2>

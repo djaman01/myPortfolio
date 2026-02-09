@@ -50,10 +50,10 @@ const ContactForm = () => {
         transition={Slide}
       />
 
-      <div className="mx-auto mb-4 pt-5 pb-8">
+      <div className="mx-auto mb-28 pt-5">
         <div className="prose mx-auto mb-10">
           <h1 className="montserrat-medium text-2xl text-gray-800">
-            Envoyez un mail via ce formulaire
+            Envoyez-moi un mail via ce formulaire
           </h1>
         </div>
 
@@ -103,7 +103,7 @@ const ContactForm = () => {
                   name="name"
                   type="text"
                   placeholder="Name"
-                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none"
+                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
                 />
                 {/* ErrorMessage est ce qui permet de voir "Requis", si on appuie sur le champ mais qu'on ne le remplit pas et qu'on passe à un autre champ */}
                 <ErrorMessage
@@ -122,7 +122,7 @@ const ContactForm = () => {
                   name="societe"
                   type="text"
                   placeholder="Company"
-                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none"
+                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
                 />
               </div>
 
@@ -138,7 +138,7 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   placeholder="E-mail"
-                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none"
+                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
                 />
                 <ErrorMessage
                   name="email"
@@ -160,7 +160,7 @@ const ContactForm = () => {
                   as="textarea"
                   placeholder="Message"
                   rows="10"
-                  className="montserrat-regular mx-auto block w-150 rounded border pt-1 pl-3 leading-tight focus:border-blue-500 focus:outline-none max-lg:w-72"
+                  className="montserrat-regular mx-auto block w-150 rounded border pt-1 pl-3 leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
                 />
                 <ErrorMessage
                   name="message"

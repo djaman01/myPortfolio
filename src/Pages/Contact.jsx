@@ -21,24 +21,23 @@ const Contact = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <div className="mt-5 mb-3">
-          <Header />
-        </div>
-
+        <Header />
+      </div>
 
       <main className="bg-gray-100">
         <div className="mt-5 text-center">
           <h1 className="martian-mono text-3xl text-[#214b9b]">Contact</h1>
 
           <p className="montserrat-regular mt-2 text-lg text-gray-500">
-            Un projet, une idée ou simplement une question ? N'hésitez pas à me
-            laisser un message.
+            Un projet ou simplement une question ? N'hésitez pas à me laisser un
+            message.
           </p>
 
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#1F2A44]" />
         </div>
 
         {/* Mail, telephone et Linkedin */}
-        <div className="montserrat-regular mx-auto mt-10 flex h-20 w-250 items-center justify-around">
+        <div className="montserrat-regular mx-auto mt-16 flex w-250 items-center justify-around max-lg:mt-12 max-lg:h-52 max-lg:w-auto max-lg:flex-col max-lg:justify-start max-lg:gap-7">
           <a
             href="mailto:jaafar.devnet@gmail.com"
             aria-label="Send me an email"
@@ -69,7 +68,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="mt-10 pb-10 text-center">
+        <div className="mt-10 max-lg:mt-8 text-center">
           <ContactForm />
         </div>
       </main>
