@@ -35,7 +35,7 @@ const BackDisplay = ({
         </a>
 
         <div className="flex flex-col items-center" data-aos="fade-left">
-          <h2 className="montserrat-strong mb-5 text-center text-2xl max-lg:mb-2 max-lg:pt-5 max-sm:w-96">
+          <h2 className="montserrat-strong mb-5 text-center text-2xl max-lg:mb-3 max-lg:pt-6 max-sm:w-96">
             {siteName}
           </h2>
           <div className="montserrat-regular flex flex-col items-center justify-center gap-5 max-lg:gap-2">
