@@ -67,7 +67,7 @@ const FullStackSites = () => {
               heroImage={portailVMHomepage}
               textHeroImage="SaaS Synthemedic: labo pharmaceutique"
               siteName=" Laboratoire pharmaceutique Synthemedic"
-              presentation="SaaS privé développé pour un usage métier interne pour:"
+              presentation="SaaS privé développé pour un usage métier interne permettant:"
               presentation2="la collecte de données via formulaires, leur analyse à travers des statistiques et la gestion des accès utilisateurs"
               frontend="Front-end:"
               backend="Back-end:"
