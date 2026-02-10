@@ -1,6 +1,6 @@
 import atlasLogo from "./atlas-logo.png";
 import expressLogo from "./express-logo.jpg";
-import logoJDev from "./logo-JDev3.png";
+import logoJDev from "./logo-JDev3.PNG";
 import mongoDBlogo from "./MongoDB-logo.png";
 import mongooseLogo from "./Mongoose-logo.png";
 import mySQLlogo from "./MySQL-logo.png";
