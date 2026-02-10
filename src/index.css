@@ -116,9 +116,11 @@
   }
 }
 
-/* Custom class for animated gradient => la 1ere couleur est à gauche puis se déroule vers la gauche avec la 2eme puis la 3eme; puis la 1ere reviens vers la droite*/
+/* Custom class for animated gradient => la 1ere couleur est à droite puis se déroule vers la gauche avec la 2eme puis la 3eme; puis la 1ere reviens vers la droite */
+/* 13s: duration of the animation, linear = constant speed, infinite = loops forever  */
+/*   background-size: 200% 200% => The gradient is 2x bigger than the element, that's why we see it moving  */
 .bg-animated-gradient {
-  background: linear-gradient(to right, #131a25, #022066, #131a25);
+  background: linear-gradient(to right, #131a25, #03277a, #131a25);
   background-size: 200% 200%;
-  animation: gradientShift 15s ease infinite;
+  animation: gradientShift 13s linear infinite; 
 }

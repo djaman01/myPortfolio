@@ -31,7 +31,7 @@ const FullStackSites = () => {
               Sites Full-Stack
             </h1>
 
-            <p className="montserrat-regular mt-2 text-lg text-gray-500">
+            <p className="montserrat-regular mt-2 text-lg text-gray-500 max-lg:mx-6">
               Projets réalisés intégrant un back-end et une base de données.
             </p>
 
@@ -39,7 +39,7 @@ const FullStackSites = () => {
           </div>
 
           {/* Flex container for the 2 grids so that i can make a gap */}
-          <div className="mx-9 mb-28 flex flex-1 flex-col gap-20 max-lg:mt-0 max-md:gap-10 max-sm:gap-5">
+          <div className="mx-9 mb-28 flex flex-1 flex-col gap-20 max-lg:mx-3 max-lg:mt-0 max-md:gap-10 max-sm:gap-5">
             {/* Phenixdeals.com */}
             <BackDisplay
               linkSite="https://www.phenixdeals.com/"

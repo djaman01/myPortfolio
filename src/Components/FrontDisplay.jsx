@@ -27,7 +27,7 @@ const FrontDisplay = ({
           <h2 className="montserrat-strong mb-5 text-center text-2xl max-lg:mb-3 max-lg:pt-6">
             {siteName}
           </h2>
-          <div className="montserrat-regular flex flex-col items-center justify-center gap-5 max-lg:gap-2">
+          <div className="montserrat-regular flex w-150 flex-col items-center justify-center gap-5 max-lg:gap-2 max-sm:w-90">
             <p className="text-xl">{presentation}</p>
 
             <p className="text-lg max-lg:mt-4">{createdWith}</p>

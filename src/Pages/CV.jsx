@@ -13,8 +13,8 @@ const CV = () => {
           Curriculum vitæ
         </h1>
 
-        <p className="montserrat-regular mt-2 text-lg text-gray-500">
-          Consultez, téléchargez ou imprimez mon CV
+        <p className="montserrat-regular mt-2 text-lg text-gray-500 max-lg:mx-6">
+          Consultez, téléchargez ou imprimez mon CV.
         </p>
 
         <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#1F2A44]" />

@@ -88,7 +88,7 @@ const Technos = () => {
         <div className="mt-5 text-center">
           <h1 className="martian-mono text-3xl text-[#214b9b]">Technologies</h1>
 
-          <p className="montserrat-regular mt-2 text-lg text-gray-500">
+          <p className="montserrat-regular mt-2 text-lg text-gray-500 max-lg:mx-6">
             Outils et technologies utilisés dans mes projets web.
           </p>
 
@@ -97,7 +97,7 @@ const Technos = () => {
 
         {/* 1ere row de la grid avec les logos des techno front-end */}
         <div className="mt-16 flex flex-col items-center max-lg:mt-12">
-          <h2 className="montserrat-strong mb-13 text-2xl leading-none">
+          <h2 className="montserrat-strong mb-13 text-2xl leading-none max-sm:mb-8">
             Front-end Technologies
           </h2>
           <div className="flex w-full items-center justify-around max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
@@ -115,7 +115,7 @@ const Technos = () => {
 
         {/* 2eme row: Pas la peine de mettre le <h1> dans un div, car il sera seul et on utilise un div quand il y a plusieurs élements */}
         <div className="mt-24 flex flex-col items-center">
-          <h2 className="montserrat-strong mb-13 text-2xl leading-none">
+          <h2 className="montserrat-strong mb-13 text-2xl leading-none max-sm:mb-8">
             Back-end Technologies
           </h2>
           <div className="flex w-full items-center justify-around max-md:grid max-md:w-max max-md:grid-cols-2 max-md:gap-x-28 max-md:gap-y-10 max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
@@ -133,7 +133,7 @@ const Technos = () => {
 
         {/* 3eme row */}
         <div className="mt-24 mb-28 flex flex-col items-center">
-          <h2 className="montserrat-strong mb-13 text-2xl leading-none max-lg:text-center">
+          <h2 className="montserrat-strong mb-13 text-2xl leading-none max-lg:text-center max-sm:mb-8">
             Databases Technologies & Management Tools
           </h2>
           <div className="flex w-full items-center justify-around max-md:grid max-md:w-max max-md:grid-cols-2 max-md:gap-x-28 max-md:gap-y-10 max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">

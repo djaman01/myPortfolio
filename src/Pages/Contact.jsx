@@ -28,9 +28,8 @@ const Contact = () => {
         <div className="mt-5 text-center">
           <h1 className="martian-mono text-3xl text-[#214b9b]">Contact</h1>
 
-          <p className="montserrat-regular mt-2 text-lg text-gray-500">
-            Un projet ou simplement une question ? N'hésitez pas à me laisser un
-            message.
+          <p className="montserrat-regular mt-2 text-lg text-gray-500 max-lg:mx-6">
+            Pour toute demande de collaboration, contactez-moi
           </p>
 
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#1F2A44]" />
@@ -68,7 +67,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="mt-10 max-lg:mt-8 text-center">
+        <div className="mt-10 text-center max-lg:mt-8">
           <ContactForm />
         </div>
       </main>
