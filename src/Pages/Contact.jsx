@@ -24,7 +24,7 @@ const Contact = () => {
         <Header />
       </div>
 
-      <main className="bg-gray-100">
+      <main className="bg-gray-100 overflow-hidden">
         <div className="mt-5 text-center">
           <h1 className="martian-mono text-3xl text-[#214b9b]">Contact</h1>
 
