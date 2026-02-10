@@ -20,17 +20,17 @@ const Technos = () => {
     {
       imgLogo: reactLogo,
       nomTechno: "React.js",
-      bgAnimatedColor: "bg-blue-500",
+      bgAnimatedColor: "bg-blue-400",
     },
     {
       imgLogo: viteLogo,
       nomTechno: "Vite.js",
-      bgAnimatedColor: "bg-blue-500",
+      bgAnimatedColor: "bg-blue-400",
     },
     {
       imgLogo: tailwindLogo,
       nomTechno: "Tailwind CSS",
-      bgAnimatedColor: "bg-blue-500",
+      bgAnimatedColor: "bg-blue-400",
     },
   ];
 
@@ -38,41 +38,41 @@ const Technos = () => {
     {
       imgLogo: nodeLogo,
       nomTechno: "Node.js",
-      bgAnimatedColor: "bg-lime-500",
+      bgAnimatedColor: "bg-lime-400",
     },
     {
       imgLogo: expressLogo,
       nomTechno: "Express.js",
-      bgAnimatedColor: "bg-lime-500",
+      bgAnimatedColor: "bg-lime-400",
     },
     {
       imgLogo: mongooseLogo,
       nomTechno: "Mongoose.js",
-      bgAnimatedColor: "bg-lime-500",
+      bgAnimatedColor: "bg-lime-400",
     },
-    { imgLogo: SQLlogo, nomTechno: "SQL", bgAnimatedColor: "bg-lime-500" },
+    { imgLogo: SQLlogo, nomTechno: "SQL", bgAnimatedColor: "bg-lime-400" },
   ];
 
   const dataBasesLogos = [
     {
       imgLogo: mySQLlogo,
       nomTechno: "MySQL",
-      bgAnimatedColor: "bg-yellow-500",
+      bgAnimatedColor: "bg-yellow-400",
     },
     {
       imgLogo: phpmyadminLogo,
       nomTechno: "phpMyAdmin",
-      bgAnimatedColor: "bg-yellow-500",
+      bgAnimatedColor: "bg-yellow-400",
     },
     {
       imgLogo: mongoDBlogo,
       nomTechno: "Mongo DB",
-      bgAnimatedColor: "bg-yellow-500",
+      bgAnimatedColor: "bg-yellow-400",
     },
     {
       imgLogo: atlasLogo,
       nomTechno: "Mongo DB Atlas",
-      bgAnimatedColor: "bg-yellow-500",
+      bgAnimatedColor: "bg-yellow-400",
     },
   ];
 
