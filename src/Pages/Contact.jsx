@@ -29,7 +29,7 @@ const Contact = () => {
           <h1 className="martian-mono text-3xl text-[#214b9b]">Contact</h1>
 
           <p className="montserrat-regular mt-2 text-lg text-gray-500 max-lg:mx-6">
-            Pour toute demande de collaboration, n'hésitez pas à me contacter.
+            Pour toute collaboration, n'hésitez pas à me contacter.
           </p>
 
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#1F2A44]" />
