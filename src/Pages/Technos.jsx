@@ -114,7 +114,7 @@ const Technos = () => {
         </div>
 
         {/* 2eme row: Pas la peine de mettre le <h1> dans un div, car il sera seul et on utilise un div quand il y a plusieurs élements */}
-        <div className="mt-24 flex flex-col items-center">
+        <div className="mt-20 flex flex-col items-center">
           <h2 className="montserrat-strong mb-13 text-2xl leading-none max-sm:mb-8">
             Back-end Technologies
           </h2>
@@ -132,7 +132,7 @@ const Technos = () => {
         </div>
 
         {/* 3eme row */}
-        <div className="mt-24 mb-28 flex flex-col items-center">
+        <div className="mt-20 mb-28 flex flex-col items-center">
           <h2 className="montserrat-strong mb-13 text-2xl leading-none max-lg:text-center max-sm:mb-8">
             Databases Technologies & Management Tools
           </h2>
