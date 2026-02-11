@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import TheSidebar from "./TheSidebar";
-
-import { logoJDev } from "../assets/images/logo";
+import { logoJB } from "../assets/images/logo";
 
 const Header = () => {
   const location = useLocation();
@@ -13,9 +12,9 @@ const Header = () => {
         <div className="flex justify-center">
           <Link to="/">
             <img
-              src={logoJDev}
-              alt="logo JDev"
-              className={`${isHomepage ? "hidden" : "ml-4 w-28 cursor-pointer bg-white max-lg:w-31"}`}
+              src={logoJB}
+              alt="logo JB"
+              className={`${isHomepage ? "hidden" : "ml-6 w-28 cursor-pointer bg-white"}`}
             />
           </Link>
         </div>
