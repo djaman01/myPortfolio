@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import TheSidebar from "./TheSidebar";
 import { logoJB } from "../assets/images/logo";
+import TheSidebar from "./TheSidebar";
 
 const Header = () => {
   const location = useLocation();
@@ -14,7 +14,7 @@ const Header = () => {
             <img
               src={logoJB}
               alt="logo JB"
-              className={`${isHomepage ? "hidden" : "ml-6 w-28 cursor-pointer bg-white"}`}
+              className={`${isHomepage ? "hidden" : "ml-6 w-28 cursor-pointer bg-white max-sm:ml-2 max-sm:w-25"}`}
             />
           </Link>
         </div>

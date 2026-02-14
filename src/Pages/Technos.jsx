@@ -77,83 +77,117 @@ const Technos = () => {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <div className="mt-5 mb-3">
-        <Header />
-      </div>
+    <>
+      {/* React19 native metadata tags */}
 
-      {/* div de tout le corps du component en une grid */}
-      <div className="grid grid-cols-1 bg-gray-100">
-        {/* Titre page */}
-        <div className="mt-5 text-center">
-          <h1 className="martian-mono text-3xl text-[#214b9b]">Technologies</h1>
+      {/* Page title (50–60 characters ideal) */}
+      <title>Technologies | Jaafar Bendahou</title>
 
-          <p className="montserrat-regular mt-2 text-lg text-gray-500 max-lg:mx-6">
-            Outils et technologies utilisés dans mes projets web.
-          </p>
+      {/* Meta description (150–160 characters) */}
+      <meta
+        name="description"
+        content="Découvrez les technologies utilisées par Jaafar Bendahou pour développer des applications web modernes et performantes"
+      />
 
-          <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#1F2A44]" />
+      {/* open graph */}
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:url"
+        content="https://jaafarbendahou.com/technologies"
+      />
+      <meta property="og:title" content="Technologies | Jaafar Bendahou" />
+      <meta
+        property="og:description"
+        content="Découvrez les technologies utilisées par Jaafar Bendahou pour développer des applications web modernes et performantes"
+      />
+
+      <meta
+        property="og:image"
+        content="https://jaafarbendahou.com/media-logo-JB.png"
+      />
+      {/* Canonical URL to avoid duplicate content */}
+      <link rel="canonical" href="https://jaafarbendahou.com/technologies" />
+
+      <div className="flex min-h-screen flex-col">
+        <div className="mt-5 mb-3">
+          <Header />
         </div>
 
-        {/* 1ere row de la grid avec les logos des techno front-end */}
-        <div className="mt-16 flex flex-col items-center max-lg:mt-12">
-          <h2 className="montserrat-strong mb-13 text-2xl leading-none max-sm:mb-8">
-            Front-end Technologies
-          </h2>
-          <div className="flex w-full items-center justify-around max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
-            {frontLogos.map((e) => (
-              <div key={e.nomTechno}>
-                <TechnoCards
-                  imgLogo={e.imgLogo}
-                  nomTechno={e.nomTechno}
-                  bgAnimatedColor={e.bgAnimatedColor}
-                />
-              </div>
-            ))}
+        {/* div de tout le corps du component en une grid */}
+        <div className="grid grid-cols-1 bg-gray-100">
+          {/* Titre page */}
+          <div className="mt-5 text-center">
+            <h1 className="martian-mono text-3xl text-[#214b9b]">
+              Technologies
+            </h1>
+
+            <p className="montserrat-regular mt-2 text-lg text-gray-500 max-lg:mx-6">
+              Outils et technologies utilisés dans mes projets web.
+            </p>
+
+            <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#1F2A44]" />
+          </div>
+
+          {/* 1ere row de la grid avec les logos des techno front-end */}
+          <div className="mt-16 flex flex-col items-center max-lg:mt-12">
+            <h2 className="montserrat-strong mb-13 text-2xl leading-none max-sm:mb-8">
+              Front-end Technologies
+            </h2>
+            <div className="flex w-full items-center justify-around max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
+              {frontLogos.map((e) => (
+                <div key={e.nomTechno}>
+                  <TechnoCards
+                    imgLogo={e.imgLogo}
+                    nomTechno={e.nomTechno}
+                    bgAnimatedColor={e.bgAnimatedColor}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* 2eme row: Pas la peine de mettre le <h1> dans un div, car il sera seul et on utilise un div quand il y a plusieurs élements */}
+          <div className="mt-20 flex flex-col items-center max-sm:mt-16">
+            <h2 className="montserrat-strong mb-13 text-2xl leading-none max-sm:mb-8">
+              Back-end Technologies
+            </h2>
+            <div className="flex w-full items-center justify-around max-md:grid max-md:w-max max-md:grid-cols-2 max-md:gap-x-28 max-md:gap-y-10 max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
+              {backLogos.map((e) => (
+                <div key={e.nomTechno}>
+                  <TechnoCards
+                    imgLogo={e.imgLogo}
+                    nomTechno={e.nomTechno}
+                    bgAnimatedColor={e.bgAnimatedColor}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* 3eme row */}
+          <div className="mt-20 mb-28 flex flex-col items-center max-sm:mt-16">
+            <h2 className="montserrat-strong mb-13 text-2xl leading-none max-lg:text-center max-sm:mb-8">
+              Databases Technologies & Management Tools
+            </h2>
+            <div className="flex w-full items-center justify-around max-md:grid max-md:w-max max-md:grid-cols-2 max-md:gap-x-28 max-md:gap-y-10 max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
+              {dataBasesLogos.map((e) => (
+                <div key={e.nomTechno}>
+                  <TechnoCards
+                    imgLogo={e.imgLogo}
+                    nomTechno={e.nomTechno}
+                    bgAnimatedColor={e.bgAnimatedColor}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* 2eme row: Pas la peine de mettre le <h1> dans un div, car il sera seul et on utilise un div quand il y a plusieurs élements */}
-        <div className="mt-20 flex flex-col items-center max-sm:mt-16">
-          <h2 className="montserrat-strong mb-13 text-2xl leading-none max-sm:mb-8">
-            Back-end Technologies
-          </h2>
-          <div className="flex w-full items-center justify-around max-md:grid max-md:w-max max-md:grid-cols-2 max-md:gap-x-28 max-md:gap-y-10 max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
-            {backLogos.map((e) => (
-              <div key={e.nomTechno}>
-                <TechnoCards
-                  imgLogo={e.imgLogo}
-                  nomTechno={e.nomTechno}
-                  bgAnimatedColor={e.bgAnimatedColor}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* 3eme row */}
-        <div className="mt-20 mb-28 flex flex-col items-center max-sm:mt-16">
-          <h2 className="montserrat-strong mb-13 text-2xl leading-none max-lg:text-center max-sm:mb-8">
-            Databases Technologies & Management Tools
-          </h2>
-          <div className="flex w-full items-center justify-around max-md:grid max-md:w-max max-md:grid-cols-2 max-md:gap-x-28 max-md:gap-y-10 max-sm:grid max-sm:w-max max-sm:grid-cols-2 max-sm:gap-5">
-            {dataBasesLogos.map((e) => (
-              <div key={e.nomTechno}>
-                <TechnoCards
-                  imgLogo={e.imgLogo}
-                  nomTechno={e.nomTechno}
-                  bgAnimatedColor={e.bgAnimatedColor}
-                />
-              </div>
-            ))}
-          </div>
+        <div>
+          <Footer />
         </div>
       </div>
-
-      <div>
-        <Footer />
-      </div>
-    </div>
+    </>
   );
 };
 
