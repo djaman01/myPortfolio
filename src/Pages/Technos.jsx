@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import {
   atlasLogo,
   expressLogo,
@@ -78,35 +79,35 @@ const Technos = () => {
 
   return (
     <>
-      {/* React19 native metadata tags */}
+      <Helmet>
+        {/* Page title (50–60 characters ideal) */}
+        <title>Technologies | Jaafar Bendahou</title>
 
-      {/* Page title (50–60 characters ideal) */}
-      <title>Technologies | Jaafar Bendahou</title>
+        {/* Meta description (150–160 characters) */}
+        <meta
+          name="description"
+          content="Découvrez les technologies utilisées par Jaafar Bendahou pour développer des applications web modernes et performantes"
+        />
 
-      {/* Meta description (150–160 characters) */}
-      <meta
-        name="description"
-        content="Découvrez les technologies utilisées par Jaafar Bendahou pour développer des applications web modernes et performantes"
-      />
+        {/* open graph */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://jaafarbendahou.com/technologies"
+        />
+        <meta property="og:title" content="Technologies | Jaafar Bendahou" />
+        <meta
+          property="og:description"
+          content="Découvrez les technologies utilisées par Jaafar Bendahou pour développer des applications web modernes et performantes"
+        />
 
-      {/* open graph */}
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:url"
-        content="https://jaafarbendahou.com/technologies"
-      />
-      <meta property="og:title" content="Technologies | Jaafar Bendahou" />
-      <meta
-        property="og:description"
-        content="Découvrez les technologies utilisées par Jaafar Bendahou pour développer des applications web modernes et performantes"
-      />
-
-      <meta
-        property="og:image"
-        content="https://jaafarbendahou.com/media-logo-JB.png"
-      />
-      {/* Canonical URL to avoid duplicate content */}
-      <link rel="canonical" href="https://jaafarbendahou.com/technologies" />
+        <meta
+          property="og:image"
+          content="https://jaafarbendahou.com/logo-JB-onglet.png"
+        />
+        {/* Canonical URL to avoid duplicate content */}
+        <link rel="canonical" href="https://jaafarbendahou.com/technologies" />
+      </Helmet>
 
       <div className="flex min-h-screen flex-col">
         <div className="mt-5 mb-3">

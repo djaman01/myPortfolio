@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
@@ -25,35 +26,35 @@ const HomePage = () => {
 
   return (
     <>
-      {/* React19 native metadata tags */}
+      <Helmet>
+        {/* Page title (50–60 characters ideal) */}
+        <title>Jaafar Bendahou | Développeur web React & Node.js</title>
 
-      {/* Page title (50–60 characters ideal) */}
-      <title>Jaafar Bendahou | Développeur web React & Node.js</title>
+        {/* Meta description (150–160 characters) */}
+        <meta
+          name="description"
+          content="Portfolio de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js. Découvrez mes projets front-end et full-stack."
+        />
 
-      {/* Meta description (150–160 characters) */}
-      <meta
-        name="description"
-        content="Portfolio de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js. Découvrez mes projets front-end et full-stack."
-      />
+        {/* open graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jaafarbendahou.com/" />
+        <meta
+          property="og:title"
+          content="Jaafar Bendahou | Développeur web React & Node.js"
+        />
+        <meta
+          property="og:description"
+          content="Portfolio de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js. Découvrez mes projets front-end et full-stack."
+        />
 
-      {/* open graph */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://jaafarbendahou.com/" />
-      <meta
-        property="og:title"
-        content="Jaafar Bendahou | Développeur web React & Node.js"
-      />
-      <meta
-        property="og:description"
-        content="Portfolio de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js. Découvrez mes projets front-end et full-stack."
-      />
-
-      <meta
-        property="og:image"
-        content="https://jaafarbendahou.com/media-logo-JB.png"
-      />
-      {/* Canonical URL to avoid duplicate content */}
-      <link rel="canonical" href="https://jaafarbendahou.com/" />
+        <meta
+          property="og:image"
+          content="https://jaafarbendahou.com/logo-JB-onglet.png"
+        />
+        {/* Canonical URL to avoid duplicate content */}
+        <link rel="canonical" href="https://jaafarbendahou.com/" />
+      </Helmet>
 
       {/* flex flex-col pour que le header et la "Hero Section" soit l'un en-dessous de l'autre et je mets min-h-screen ici pour ne pas avoir de possibilité de scrolldown  */}
       <div className="bg-animated-gradient flex min-h-screen flex-col">
