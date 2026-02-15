@@ -1,7 +1,6 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
 import {
   phenixDealsHomepage,
   portailVMHomepage,
@@ -21,42 +20,36 @@ const FullStackSites = () => {
   }, []);
   return (
     <>
-      <Helmet>
-        {/* Page title (50–60 characters ideal) */}
-        <title>Sites Full-stack | Jaafar Bendahou</title>
+      {/* React19 native metadata tags */}
 
-        {/* Meta description (150–160 characters) */}
-        <meta
-          name="description"
-          content="Découvrez les projets full-stack réalisés par Jaafar Bendahou, intégrant un back-end et une base de données."
-        />
+      {/* Page title (50–60 characters ideal) */}
+      <title>Sites Full-stack | Jaafar Bendahou</title>
 
-        {/* open graph */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://jaafarbendahou.com/fullStackSites"
-        />
-        <meta
-          property="og:title"
-          content="Sites Full-stack | Jaafar Bendahou"
-        />
-        <meta
-          property="og:description"
-          content="Découvrez les projets full-stack réalisés par Jaafar Bendahou, intégrant un back-end et une base de données."
-        />
+      {/* Meta description (150–160 characters) */}
+      <meta
+        name="description"
+        content="Découvrez les projets full-stack réalisés par Jaafar Bendahou, intégrant un back-end et une base de données."
+      />
 
-        <meta
-          property="og:image"
-          content="https://jaafarbendahou.com/logo-JB-onglet.png"
-        />
-        {/* Canonical URL to avoid duplicate content */}
-        <link
-          rel="canonical"
-          href="https://jaafarbendahou.com/fullStackSites"
-        />
-      </Helmet>
-      
+      {/* open graph */}
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:url"
+        content="https://jaafarbendahou.com/fullStackSites"
+      />
+      <meta property="og:title" content="Sites Full-stack | Jaafar Bendahou" />
+      <meta
+        property="og:description"
+        content="Découvrez les projets full-stack réalisés par Jaafar Bendahou, intégrant un back-end et une base de données."
+      />
+
+      <meta
+        property="og:image"
+        content="https://jaafarbendahou.com/media-logo-JB.png"
+      />
+      {/* Canonical URL to avoid duplicate content */}
+      <link rel="canonical" href="https://jaafarbendahou.com/fullStackSites" />
+
       <div className="flex min-h-screen flex-col overflow-hidden">
         <div className="mt-5 mb-3">
           <Header />

@@ -8,8 +8,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-import { Helmet } from "react-helmet-async";
-
 const Contact = () => {
   useEffect(() => {
     Aos.init({
@@ -22,32 +20,32 @@ const Contact = () => {
 
   return (
     <>
-      <Helmet>
-        {/* Page title (50–60 characters ideal) */}
-        <title>Contact | Jaafar Bendahou</title>
+      {/* React19 native metadata tags */}
 
-        {/* Meta description (150–160 characters) */}
-        <meta
-          name="description"
-          content="Un projet web ou une collaboration ? Contactez Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
-        />
+      {/* Page title (50–60 characters ideal) */}
+      <title>Contact | Jaafar Bendahou</title>
 
-        {/* open graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://jaafarbendahou.com/contact" />
-        <meta property="og:title" content="Contact | Jaafar Bendahou" />
-        <meta
-          property="og:description"
-          content="Un projet web ou une collaboration ? Contactez Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
-        />
+      {/* Meta description (150–160 characters) */}
+      <meta
+        name="description"
+        content="Un projet web ou une collaboration ? Contactez Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
+      />
 
-        <meta
-          property="og:image"
-          content="https://jaafarbendahou.com/logo-JB-onglet.png"
-        />
-        {/* Canonical URL to avoid duplicate content */}
-        <link rel="canonical" href="https://jaafarbendahou.com/contact" />
-      </Helmet>
+      {/* open graph */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://jaafarbendahou.com/contact" />
+      <meta property="og:title" content="Contact | Jaafar Bendahou" />
+      <meta
+        property="og:description"
+        content="Un projet web ou une collaboration ? Contactez Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
+      />
+
+      <meta
+        property="og:image"
+        content="https://jaafarbendahou.com/media-logo-JB.png"
+      />
+      {/* Canonical URL to avoid duplicate content */}
+      <link rel="canonical" href="https://jaafarbendahou.com/contact" />
 
       <div className="flex min-h-screen flex-col">
         <div className="mt-5 mb-3">

@@ -5,7 +5,6 @@ import Header from "../Components/Header";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
 import FrontDisplay from "../Components/FrontDisplay";
 
 const FrontSites = () => {
@@ -20,35 +19,33 @@ const FrontSites = () => {
 
   return (
     <>
-      <Helmet>
-        {/* Page title (50–60 characters ideal) */}
-        <title>Sites Front-end | Jaafar Bendahou</title>
+      {/* React19 native metadata tags */}
 
-        {/* Meta description (150–160 characters) */}
-        <meta
-          name="description"
-          content="Découvrez les sites front-end réalisés par Jaafar Bendahou. Des projets modernes, performants et responsive."
-        />
+      {/* Page title (50–60 characters ideal) */}
+      <title>Sites Front-end | Jaafar Bendahou</title>
 
-        {/* open graph */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://jaafarbendahou.com/frontSites"
-        />
-        <meta property="og:title" content="Sites Front-end | Jaafar Bendahou" />
-        <meta
-          property="og:description"
-          content="Découvrez les sites front-end réalisés par Jaafar Bendahou. Des projets modernes, performants et responsive."
-        />
+      {/* Meta description (150–160 characters) */}
+      <meta
+        name="description"
+        content="Découvrez les sites front-end réalisés par Jaafar Bendahou. Des projets modernes, performants et responsive."
+      />
 
-        <meta
-          property="og:image"
-          content="https://jaafarbendahou.com/logo-JB-onglet.png"
-        />
-        {/* Canonical URL to avoid duplicate content */}
-        <link rel="canonical" href="https://jaafarbendahou.com/frontSites" />
-      </Helmet>
+      {/* open graph */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://jaafarbendahou.com/frontSites" />
+      <meta property="og:title" content="Sites Front-end | Jaafar Bendahou" />
+      <meta
+        property="og:description"
+        content="Découvrez les sites front-end réalisés par Jaafar Bendahou. Des projets modernes, performants et responsive."
+      />
+
+      <meta
+        property="og:image"
+        content="https://jaafarbendahou.com/media-logo-JB.png"
+      />
+      {/* Canonical URL to avoid duplicate content */}
+      <link rel="canonical" href="https://jaafarbendahou.com/frontSites" />
+
       <div className="flex min-h-screen flex-col overflow-hidden">
         <div className="mt-5 mb-3">
           <Header />
