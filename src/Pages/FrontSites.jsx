@@ -41,7 +41,7 @@ const FrontSites = () => {
 
       <meta
         property="og:image"
-        content="https://jaafarbendahou.com/logo-JB-onglet.png"
+        content="https://jaafarbendahou.com/logoJB-media.jpg"
       />
       {/* Canonical URL to avoid duplicate content */}
       <link rel="canonical" href="https://jaafarbendahou.com/frontSites" />
