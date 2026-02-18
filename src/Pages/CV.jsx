@@ -1,3 +1,4 @@
+import { FaFileDownload } from "react-icons/fa";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 
@@ -36,16 +37,22 @@ const CV = () => {
           <Header />
         </div>
 
-        <div className="mt-5 mb-16 text-center max-lg:mb-12">
+        <div className="mt-5 mb-8 text-center max-lg:mb-5">
           <h1 className="martian-mono text-3xl text-[#214b9b]">
             Curriculum vitæ
           </h1>
 
           <p className="montserrat-regular mt-2 text-lg text-gray-500 max-lg:mx-6">
-            Consultez, téléchargez ou imprimez mon CV.
+            Consultez ou téléchargez mon CV.
           </p>
 
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#1F2A44]" />
+        </div>
+
+        <div className="mx-auto mb-8 w-max rounded-sm bg-[#214b9b] px-2 py-3 transition hover:scale-105 active:scale-100 max-lg:mb-5">
+          <a href="/CV-JaafarBenda" download>
+            <FaFileDownload size={28} color="white" />
+          </a>
         </div>
 
         <iframe
