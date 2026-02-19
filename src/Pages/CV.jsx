@@ -50,13 +50,13 @@ const CV = () => {
         </div>
 
         <div className="mx-auto mb-8 w-max rounded-sm bg-[#214b9b] px-2 py-3 transition hover:scale-105 active:scale-100 max-lg:mb-5">
-          <a href="/CV-JaafarBenda.pdf" download>
+          <a href="/CV-JaafarBendahou.pdf" download>
             <FaFileDownload size={28} color="white" />
           </a>
         </div>
 
         <iframe
-          src="/CV-JaafarBenda.pdf"
+          src="/CV-JaafarBendahou.pdf"
           width="100%"
           className="w-full max-lg:h-170 lg:h-320"
           style={{ border: "none" }}
