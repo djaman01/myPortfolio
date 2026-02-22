@@ -79,103 +79,113 @@ const ContactForm = () => {
               .min(30, "Doit comporter 30 caractères minimum")
               .required("Requis"),
           })}
-          onSubmit={async (values, { resetForm }) => {
+          onSubmit={async (values, { resetForm, setSubmitting }) => {
+            // (state interne de formik: const [isSubmitting, setSubmitting] = useState(false);) devient true automatquement quand on clique sur "envoyer"
             try {
               const result = await sendEmail(values); //Appel de la function sendEmail avec pour argument 'values' => valeurs du formulaire capturés par Formik
               console.log("Email sent successfully", result);
 
-              notifySuccess();
+              notifySuccess(); //Lors de l'envoie du formulaire Formik rend setSubmitting = true automatiquement donc isSubmitting = true, donc le bouton envoyer est disabled
               resetForm();
             } catch (error) {
               console.error("Error sending Email:", error);
               notifyError();
+            } finally {
+              setSubmitting(false); //isSubmitting redevient false et bouton "envoyer" redevient cliquable
             }
           }}
         >
-          <Form>
-            <div className="">
-              <div className="mb-10">
-                <label htmlFor="name" className="montserrat-strong text-lg">
-                  Nom
-                </label>
-                <Field
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Name"
-                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
-                />
-                {/* ErrorMessage est ce qui permet de voir "Requis", si on appuie sur le champ mais qu'on ne le remplit pas et qu'on passe à un autre champ */}
-                <ErrorMessage
-                  name="name"
-                  component="div"
-                  className="error text-sm text-red-500"
-                />
-              </div>
+          {/* {{isSubmitting}=> () is what enables us to use the Formik state isSubmitting on the JSX => <button disabled={isSubmitting}>} */}
+          {({ isSubmitting }) => (
+            <Form>
+              <div className="">
+                <div className="mb-10">
+                  <label htmlFor="name" className="montserrat-strong text-lg">
+                    Nom
+                  </label>
+                  <Field
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Name"
+                    className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
+                  />
+                  {/* ErrorMessage est ce qui permet de voir "Requis", si on appuie sur le champ mais qu'on ne le remplit pas et qu'on passe à un autre champ */}
+                  <ErrorMessage
+                    name="name"
+                    component="div"
+                    className="error text-sm text-red-500"
+                  />
+                </div>
 
-              <div className="mb-10">
-                <label htmlFor="societe" className="montserrat-strong text-lg">
-                  Société
-                </label>
-                <Field
-                  id="societe"
-                  name="societe"
-                  type="text"
-                  placeholder="Company"
-                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
-                />
-              </div>
+                <div className="mb-10">
+                  <label
+                    htmlFor="societe"
+                    className="montserrat-strong text-lg"
+                  >
+                    Société
+                  </label>
+                  <Field
+                    id="societe"
+                    name="societe"
+                    type="text"
+                    placeholder="Company"
+                    className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
+                  />
+                </div>
 
-              <div className="mb-10">
-                <label
-                  htmlFor="email"
-                  className="montserrat-strong text-lg max-lg:text-xl"
-                >
-                  E-mail
-                </label>
-                <Field
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="E-mail"
-                  className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
-                />
-                <ErrorMessage
-                  name="email"
-                  component="div"
-                  className="error text-sm text-red-500"
-                />
-              </div>
+                <div className="mb-10">
+                  <label
+                    htmlFor="email"
+                    className="montserrat-strong text-lg max-lg:text-xl"
+                  >
+                    E-mail
+                  </label>
+                  <Field
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="E-mail"
+                    className="montserrat-regular mx-auto block w-150 border-b px-3 py-2 text-left leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
+                  />
+                  <ErrorMessage
+                    name="email"
+                    component="div"
+                    className="error text-sm text-red-500"
+                  />
+                </div>
 
-              <div className="col-span-2">
-                <label
-                  htmlFor="message"
-                  className="montserrat-strong text-lg max-lg:text-xl"
-                >
-                  Message
-                </label>
-                <Field
-                  id="message"
-                  name="message"
-                  as="textarea"
-                  placeholder="Message"
-                  rows="10"
-                  className="montserrat-regular mx-auto block w-150 rounded border pt-1 pl-3 leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
-                />
-                <ErrorMessage
-                  name="message"
-                  component="div"
-                  className="error text-sm text-red-500"
-                />
+                <div className="col-span-2">
+                  <label
+                    htmlFor="message"
+                    className="montserrat-strong text-lg max-lg:text-xl"
+                  >
+                    Message
+                  </label>
+                  <Field
+                    id="message"
+                    name="message"
+                    as="textarea"
+                    placeholder="Message"
+                    rows="10"
+                    className="montserrat-regular mx-auto block w-150 rounded border pt-1 pl-3 leading-tight focus:border-blue-500 focus:outline-none max-md:w-120 max-sm:w-80"
+                  />
+                  <ErrorMessage
+                    name="message"
+                    component="div"
+                    className="error text-sm text-red-500"
+                  />
+                </div>
               </div>
-            </div>
-            <button
-              type="submit" //Dans un Formulaire Formik, lorsqu'on clique sur un bouton de type="submit", il appelle automatiquement la fonction onSubmit définie dans le composant Formik
-              className="mt-5 cursor-pointer rounded bg-blue-600 px-4 py-2 font-bold text-white transition hover:scale-105 hover:bg-blue-700 focus:ring-blue-500 focus:outline-none active:scale-100"
-            >
-              Envoyer
-            </button>
-          </Form>
+              <button
+                type="submit" //Appelle automatiquement la fonction onSubmit définie dans le composant Formik et rend isSubmitting = true
+                disabled={isSubmitting} //If isSubmitting = true, the button "envoyer" is disabled (Donc lors de l'envoie du formulaire, car setSubmitting(true) automatiquement quand on appuie sur "envoyer")
+                className="mt-5 cursor-pointer rounded bg-blue-600 px-4 py-2 font-bold text-white transition hover:scale-105 hover:bg-blue-700 focus:ring-blue-500 focus:outline-none active:scale-100 disabled:cursor-not-allowed disabled:bg-gray-400 disabled:opacity-70 disabled:hover:scale-100"
+              >
+                {isSubmitting ? "Envoie..." : "Envoyer"}
+              </button>
+            </Form>
+          )}
         </Formik>
       </div>
     </div>
