@@ -1,6 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import {
   phenixDealsHomepage,
   portailVMHomepage,
@@ -20,36 +21,39 @@ const FullStackSites = () => {
   }, []);
   return (
     <>
-      {/* React19 native metadata tags */}
+      <Helmet>
+        <title>Sites Full-stack | Jaafar Bendahou</title>
 
-      {/* Page title (50–60 characters ideal) */}
-      <title>Sites Full-stack | Jaafar Bendahou</title>
+        <meta
+          name="description"
+          content="Découvrez les projets full-stack réalisés par Jaafar Bendahou : applications avec back-end et base de données."
+        />
 
-      {/* Meta description (150–160 characters) */}
-      <meta
-        name="description"
-        content="Découvrez les projets full-stack réalisés par Jaafar Bendahou, intégrant un back-end et une base de données."
-      />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://jaafarbendahou.com/fullStackSites"
+        />
+        <meta
+          property="og:title"
+          content="Sites Full-stack | Jaafar Bendahou"
+        />
+        <meta
+          property="og:description"
+          content="Découvrez les projets full-stack réalisés par Jaafar Bendahou : applications avec back-end et base de données."
+        />
+        <meta
+          property="og:image"
+          content="https://jaafarbendahou.com/logoJB-media.jpg"
+        />
 
-      {/* open graph */}
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:url"
-        content="https://jaafarbendahou.com/fullStackSites"
-      />
-      <meta property="og:title" content="Sites Full-stack | Jaafar Bendahou" />
-      <meta
-        property="og:description"
-        content="Découvrez les projets full-stack réalisés par Jaafar Bendahou, intégrant un back-end et une base de données."
-      />
-
-      <meta
-        property="og:image"
-        content="https://jaafarbendahou.com/logoJB-media.jpg"
-      />
-
-      {/* Canonical URL to avoid duplicate content */}
-      <link rel="canonical" href="https://jaafarbendahou.com/fullStackSites" />
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://jaafarbendahou.com/fullStackSites"
+        />
+      </Helmet>
 
       <div className="flex min-h-screen flex-col overflow-hidden">
         <div className="mt-5 mb-3">

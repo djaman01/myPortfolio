@@ -7,6 +7,7 @@ import { FaEnvelope, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   useEffect(() => {
@@ -20,33 +21,30 @@ const Contact = () => {
 
   return (
     <>
-      {/* React19 native metadata tags */}
+      <Helmet>
+        <title>Contact | Jaafar Bendahou</title>
 
-      {/* Page title (50–60 characters ideal) */}
-      <title>Contact | Jaafar Bendahou</title>
+        <meta
+          name="description"
+          content="Un projet web ou une collaboration ? Contactez Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
+        />
 
-      {/* Meta description (150–160 characters) */}
-      <meta
-        name="description"
-        content="Un projet web ou une collaboration ? Contactez Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
-      />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jaafarbendahou.com/contact" />
+        <meta property="og:title" content="Contact | Jaafar Bendahou" />
+        <meta
+          property="og:description"
+          content="Un projet web ou une collaboration ? Contactez Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
+        />
+        <meta
+          property="og:image"
+          content="https://jaafarbendahou.com/logoJB-media.jpg"
+        />
 
-      {/* open graph */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://jaafarbendahou.com/contact" />
-      <meta property="og:title" content="Contact | Jaafar Bendahou" />
-      <meta
-        property="og:description"
-        content="Un projet web ou une collaboration ? Contactez Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
-      />
-
-      <meta
-        property="og:image"
-        content="https://jaafarbendahou.com/logoJB-media.jpg"
-      />
-
-      {/* Canonical URL to avoid duplicate content */}
-      <link rel="canonical" href="https://jaafarbendahou.com/contact" />
+        {/* Canonical */}
+        <link rel="canonical" href="https://jaafarbendahou.com/contact" />
+      </Helmet>
 
       <div className="flex min-h-screen flex-col">
         <div className="mt-5 mb-3">

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FaFileDownload } from "react-icons/fa";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
@@ -5,32 +6,30 @@ import Header from "../Components/Header";
 const CV = () => {
   return (
     <>
-      {/* React19 native metadata tags */}
+      <Helmet>
+        <title>CV | Jaafar Bendahou</title>
 
-      {/* Page title (50–60 characters ideal) */}
-      <title>CV | Jaafar Bendahou</title>
+        <meta
+          name="description"
+          content="Consultez le CV de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
+        />
 
-      {/* Meta description (150–160 characters) */}
-      <meta
-        name="description"
-        content="Consultez le CV de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js"
-      />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jaafarbendahou.com/cv" />
+        <meta property="og:title" content="CV | Jaafar Bendahou" />
+        <meta
+          property="og:description"
+          content="Consultez le CV de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js."
+        />
+        <meta
+          property="og:image"
+          content="https://jaafarbendahou.com/logoJB-media.jpg"
+        />
 
-      {/* open graph */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://jaafarbendahou.com/CV" />
-      <meta property="og:title" content="CV | Jaafar Bendahou" />
-      <meta
-        property="og:description"
-        content="Consultez le CV de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js"
-      />
-
-      <meta
-        property="og:image"
-        content="https://jaafarbendahou.com/logoJB-media.jpg"
-      />
-      {/* Canonical URL to avoid duplicate content */}
-      <link rel="canonical" href="https://jaafarbendahou.com/CV" />
+        {/* Canonical */}
+        <link rel="canonical" href="https://jaafarbendahou.com/cv" />
+      </Helmet>
 
       <div className="flex min-h-screen flex-col">
         <div className="mt-5 mb-3">
