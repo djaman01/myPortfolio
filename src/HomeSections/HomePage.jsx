@@ -31,7 +31,7 @@ const HomePage = () => {
 
         <meta
           name="description"
-          content="Portfolio de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js. Découvrez mes projets front-end et full-stack."
+          content="Développeur web freelance spécialisé en React et Node.js: je crée des solutions web sur mesure pour répondre à vos besoins métier."
         />
 
         {/* Open Graph */}
@@ -43,7 +43,7 @@ const HomePage = () => {
         />
         <meta
           property="og:description"
-          content="Portfolio de Jaafar Bendahou, développeur Full-Stack spécialisé en React et Node.js. Découvrez mes projets front-end et full-stack."
+          content="Développeur web freelance spécialisé en React et Node.js: je crée des solutions web sur mesure pour répondre à vos besoins métier."
         />
         <meta
           property="og:image"
