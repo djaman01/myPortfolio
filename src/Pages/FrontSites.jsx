@@ -77,6 +77,7 @@ const FrontSites = () => {
               presentation="Site vitrine développé pour une entreprise du secteur textile."
               createdWith="Créé avec React.js / Vite.js / Tailwind CSS"
               linkGithub="https://github.com/djaman01/fisatex"
+              displayCode="No"
             />
 
             {/* inesandaloussi.com */}
@@ -85,9 +86,10 @@ const FrontSites = () => {
               heroImage={inesHomepage}
               textHeroImage="inesandaloussi.com: Portfolio Architecte"
               siteName="Inesandaloussi.com"
-              presentation="Site-Portfolio développé pour une architecte."
+              presentation="Site portfolio développé pour une architecte."
               createdWith="Créé avec React.js / Vite.js / Tailwind CSS"
               linkGithub="https://github.com/djaman01/inesPortfolio"
+              displayCode="No"
             />
           </div>
         </main>

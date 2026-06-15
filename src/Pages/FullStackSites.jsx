@@ -92,9 +92,7 @@ const FullStackSites = () => {
               frontTechnos=" React.js / Vite.js / Tailwind CSS"
               backTechnos=" Node.js / Express.js / Mongoose"
               dbTechnos=" Mongo DB / Mongo DB Atlas"
-              linkGithubFront="https://github.com/djaman01/Phenixdeals-Vite"
-              linkGithubBack="https://github.com/djaman01/Phenixdeals-back"
-              displayCode="Yes"
+              displayCode="No"
             />
 
             {/* portailvmsynthemedic.com */}

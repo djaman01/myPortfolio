@@ -8,6 +8,7 @@ const FrontDisplay = ({
   presentation,
   createdWith,
   linkGithub,
+  displayCode,
 }) => {
   return (
     <>
@@ -32,18 +33,21 @@ const FrontDisplay = ({
 
             <p className="text-lg max-lg:mt-4">{createdWith}</p>
           </div>
-          {/* https://github.com/djaman01/fisatex */}
-          <div className="mt-5 flex flex-col items-center justify-center gap-2 max-lg:mt-3">
-            <p className="montserrat-regular text-lg underline">Code source:</p>
-            <a
-              href={linkGithub}
-              target="_blank"
-              rel="noopener"
-              className="transition hover:scale-110 active:scale-100"
-            >
-              <FaGithub size={37} />
-            </a>
-          </div>
+          {displayCode === "Yes" && (
+            <div className="mt-5 flex flex-col items-center justify-center gap-2 max-lg:mt-3">
+              <p className="montserrat-regular text-lg underline">
+                Code source:
+              </p>
+              <a
+                href={linkGithub}
+                target="_blank"
+                rel="noopener"
+                className="transition hover:scale-110 active:scale-100"
+              >
+                <FaGithub size={37} />
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </>
