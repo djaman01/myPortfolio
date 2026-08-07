@@ -55,7 +55,7 @@ const CV = () => {
         </div>
 
         <iframe
-          src="/CV-JaafarBendahou.pdf"
+          src="/CV-JaafarBenda.pdf"
           width="100%"
           className="w-full max-lg:h-170 lg:h-320"
           style={{ border: "none" }}
